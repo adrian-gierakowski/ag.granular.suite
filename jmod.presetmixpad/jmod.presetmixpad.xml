@@ -7,6 +7,7 @@
   <preset number='1' name='default'>
     <item name='cols' type='integer' priority='2' mixweight='1'>2</item>
     <item name='dotsize' type='decimal' priority='0' mixweight='1'>4.000000</item>
+    <item name='presets/list' type='array' priority='3'>1.000000 2.000000 3.000000 4.000000 5.000000 6.000000 7.000000 8.000000 9.000000 </item>
     <item name='rows' type='integer' priority='2' mixweight='1'>2</item>
     <item name='size/x' type='integer' priority='1' mixweight='1'>256</item>
     <item name='size/y' type='integer' priority='1' mixweight='1'>256</item>
