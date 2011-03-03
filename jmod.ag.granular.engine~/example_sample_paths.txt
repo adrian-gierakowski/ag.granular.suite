@@ -1,5 +1,5 @@
 #obj 1 mat
-#mess 1 size 98 1
+#mess 1 size 110 1
 #mess 1 row 0 "chain_chucks_small.01.MIC2.wav"
 #mess 1 row 1 "chain_chucks_small.02.MIC2.wav"
 #mess 1 row 2 "chain_chucks_small.03.MIC2.wav"
@@ -98,3 +98,15 @@
 #mess 1 row 95 "102492_sandyrb_IMPROV_PERCS_104_2_BARS_130_BPM.wav"
 #mess 1 row 96 "109953__Timbre__djembe_loop_13_variant_.wav"
 #mess 1 row 97 "111159__bronxio__Drumloop_96BPM_En_marcha.wav"
+#mess 1 row 98 "box_tom.aif"
+#mess 1 row 99 "box_tom1.aif"
+#mess 1 row 100 "box_tom2.aif"
+#mess 1 row 101 "harpsi_c2.aif"
+#mess 1 row 102 "harpsi_c3.aif"
+#mess 1 row 103 "harpsi_c4.aif"
+#mess 1 row 104 "harpsi_c5.aif"
+#mess 1 row 105 "harpsi_c6.aif"
+#mess 1 row 106 "harpsi_cluster_high_short1_deacay.aif"
+#mess 1 row 107 "harpsi_cluster_high.aif"
+#mess 1 row 108 "harpsi_cluster_highest.aif"
+#mess 1 row 109 "harpsi_cluster_low_decay.aif"
