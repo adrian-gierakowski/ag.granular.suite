@@ -85,12 +85,13 @@
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"id" : "obj-9",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.0, 367.0, 265.0, 17.0 ],
-					"text" : "/samples/loadFromFile example_sample_paths.txt"
+					"patching_rect" : [ 19.0, 367.0, 186.0, 29.0 ],
+					"text" : "/samples/load/collection/filepath example_sample_collection.txt"
 				}
 
 			}

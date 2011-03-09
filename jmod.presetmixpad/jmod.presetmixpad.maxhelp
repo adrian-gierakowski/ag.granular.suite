@@ -27,7 +27,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 511.0, -1.0, 50.0, 19.0 ]
+					"patching_rect" : [ 539.0, -1.0, 50.0, 19.0 ]
 				}
 
 			}
@@ -53,8 +53,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 25.0, 119.0, 19.0 ],
-					"text" : "pak /position/xy 0. 0."
+					"patching_rect" : [ 382.0, 20.0, 176.0, 19.0 ],
+					"text" : "pak /parameter/position/xy 0. 0."
 				}
 
 			}
@@ -67,8 +67,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 120.0, 218.0, 142.0, 17.0 ],
-					"text" : "238. 190."
+					"patching_rect" : [ 120.0, 221.0, 142.0, 17.0 ],
+					"text" : "78. 125."
 				}
 
 			}
@@ -164,7 +164,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 56.0, 316.0, 465.5, 17.0 ],
-					"text" : "preset/mix 0 0.036255 0 0.47937 0 0.450317 0 0.034058"
+					"text" : "preset/mix 5 0.610962 6 0.099976 9 0.040649 8 0.248413"
 				}
 
 			}
@@ -178,7 +178,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 198.0, 293.0, 252.5, 17.0 ],
-					"text" : "0 0 0 0"
+					"text" : "5 6 9 8"
 				}
 
 			}
@@ -192,7 +192,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 199.0, 271.0, 251.5, 17.0 ],
-					"text" : "0.036255 0.47937 0.450317 0.034058"
+					"text" : "0.610962 0.099976 0.040649 0.248413"
 				}
 
 			}
@@ -234,7 +234,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 34.0, 188.0, 172.0, 19.0 ],
+					"patching_rect" : [ 34.0, 195.0, 172.0, 19.0 ],
 					"text" : "jcom.oscroute /mix /position/xy"
 				}
 
@@ -248,7 +248,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.0, 44.0, 300.0, 140.0 ],
+					"patching_rect" : [ 34.0, 51.0, 300.0, 140.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 61.0, 58.0, 300.0, 140.0 ]
 				}
@@ -261,15 +261,6 @@
 					"hidden" : 0,
 					"midpoints" : [  ],
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"hidden" : 0,
-					"midpoints" : [ 420.5, 43.5, 43.5, 43.5 ],
-					"source" : [ "obj-10", 0 ]
 				}
 
 			}
@@ -367,7 +358,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 1 ],
 					"hidden" : 0,
-					"midpoints" : [ 120.0, 211.0, 252.5, 211.0 ],
+					"midpoints" : [ 120.0, 218.0, 252.5, 218.0 ],
 					"source" : [ "obj-4", 1 ]
 				}
 

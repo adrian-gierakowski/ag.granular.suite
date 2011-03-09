@@ -9,7 +9,9 @@
     <item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='grains/on' type='boolean' priority='2' mixweight='1'>0</item>
     <item name='ola/interpolate' type='decimal' priority='1' mixweight='1'>1.000000</item>
-    <item name='samples/loadFromFile' type='string' priority='0' mixweight='1'>0</item>
+    <item name='samples/load/collection/filepath' type='string' priority='0' mixweight='1'>nil</item>
+    <item name='samples/load/mode' type='integer' priority='0' mixweight='1'>0</item>
+    <item name='samples/save/collection' type='string' priority='0' mixweight='1'>0</item>
     <item name='source/interpolate' type='decimal' priority='1' mixweight='1'>1.000000</item>
     <item name='view/color/border' type='array' priority='0' mixweight='1'>0</item>
     <item name='view/color/contentBackground' type='array' priority='0' mixweight='1'>0</item>

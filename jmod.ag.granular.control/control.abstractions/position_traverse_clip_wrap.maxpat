@@ -86,7 +86,7 @@
 					"outlinecolor" : [ 0.392157, 0.392157, 0.392157, 1.0 ],
 					"patching_rect" : [ 1252.0, 302.0, 21.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 69.409668, -0.153839, 20.0, 20.0 ],
+					"presentation_rect" : [ 62.409668, -0.153839, 20.0, 20.0 ],
 					"varname" : "/position/traverse/reset"
 				}
 
@@ -108,7 +108,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"patching_rect" : [ 8.0, 6.862427, 100.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 119.409668, -0.153839, 51.0, 19.0 ],
+					"presentation_rect" : [ 112.409668, -0.153839, 51.0, 19.0 ],
 					"rounded" : 4,
 					"types" : [  ],
 					"varname" : "/position/adjustto"
@@ -132,7 +132,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"patching_rect" : [ 6.0, 204.062378, 100.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 88.409668, -0.153839, 30.0, 19.0 ],
+					"presentation_rect" : [ 81.409668, -0.153839, 30.0, 19.0 ],
 					"rounded" : 4,
 					"types" : [  ],
 					"varname" : "/position/clipwrap"
@@ -168,7 +168,7 @@
 					"outlettype" : [ "float", "bang" ],
 					"patching_rect" : [ 1199.0, 409.0, 50.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.409668, -0.153839, 50.0, 19.0 ],
+					"presentation_rect" : [ 20.409668, -0.153839, 43.0, 19.0 ],
 					"triangle" : 0,
 					"varname" : "/position/traverse/rate"
 				}
@@ -177,6 +177,7 @@
 , 			{
 				"box" : 				{
 					"description" : "var 0",
+					"editor_interface" : "",
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"ftm_objref_conv" : 0,
@@ -198,6 +199,7 @@
 , 			{
 				"box" : 				{
 					"description" : "var 0",
+					"editor_interface" : "",
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"ftm_objref_conv" : 0,
