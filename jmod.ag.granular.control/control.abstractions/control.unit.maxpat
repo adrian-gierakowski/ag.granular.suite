@@ -204,7 +204,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3329.829834, 898.140015, 110.0, 24.0 ],
+					"patching_rect" : [ 3329.829834, 899.140015, 110.0, 24.0 ],
 					"text" : "RANDOM URN"
 				}
 
@@ -420,12 +420,12 @@
 					"patching_rect" : [ 2691.266602, 742.166992, 159.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : "",
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"fontname" : "Verdana",
+						"default_fontsize" : 10.0
 					}
 ,
 					"text" : "p update.when.things.change"
@@ -5702,12 +5702,12 @@
 					"patching_rect" : [ 205.87207, 1020.281799, 212.0, 28.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : "",
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"fontname" : "Verdana",
+						"default_fontsize" : 10.0
 					}
 ,
 					"text" : "p jamoma.parameters"
@@ -5771,8 +5771,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 894.0, 390.0, 437.353546, 17.0 ],
-									"presentation_rect" : [ 894.0, 390.0, 437.353546, 17.0 ],
+									"patching_rect" : [ 894.0, 390.0, 426.986359, 17.0 ],
+									"presentation_rect" : [ 894.0, 390.0, 426.986359, 17.0 ],
 									"text" : [ "_($list.values.fvecs.mat set 3 0 $#2.list.values.fvec $#2.list.values.read.write.fvec);" ]
 								}
 
@@ -6408,12 +6408,12 @@
 					"patching_rect" : [ 206.87207, 1055.016846, 146.0, 28.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : "",
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"fontname" : "Verdana",
+						"default_fontsize" : 10.0
 					}
 ,
 					"text" : "p ftm.variables"
@@ -6771,12 +6771,12 @@
 					"patching_rect" : [ 961.0, 270.6875, 80.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : "",
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"fontname" : "Verdana",
+						"default_fontsize" : 10.0
 					}
 ,
 					"text" : "p unpack+set"
@@ -7522,12 +7522,12 @@
 					"patching_rect" : [ 454.384277, 222.974365, 159.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : "",
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"fontname" : "Verdana",
+						"default_fontsize" : 10.0
 					}
 ,
 					"text" : "p #2.list.view.min"
@@ -7676,12 +7676,12 @@
 					"patching_rect" : [ 621.384277, 221.974365, 161.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : "",
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"fontname" : "Verdana",
+						"default_fontsize" : 10.0
 					}
 ,
 					"text" : "p #2.list.view.max"
@@ -8535,7 +8535,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1660.131226, 266.315186, 904.0, 958.0 ]
+					"patching_rect" : [ 1661.131226, 266.315186, 911.0, 958.0 ]
 				}
 
 			}
