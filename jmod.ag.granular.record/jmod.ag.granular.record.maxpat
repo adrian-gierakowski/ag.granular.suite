@@ -456,8 +456,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1419.0, 310.0, 479.0, 31.0 ],
-					"text" : "jcom.parameter record/pause @type boolean @range/clipmode both @range/bounds 0 1 @repetitions/allow 0 @ramp/drive none @priority 2 @description \"pause playback \"",
+					"patching_rect" : [ 1419.0, 310.0, 570.0, 31.0 ],
+					"text" : "jcom.parameter record/pause @type boolean @range/clipmode both @range/bounds 0 1 @repetitions/allow 0 @ramp/drive none @priority 2 @description \"pause recording \"",
 					"varname" : "hue_angle[6]"
 				}
 
@@ -487,7 +487,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1089.0, 153.0, 598.0, 43.0 ],
-					"text" : "jcom.message record/record @type boolean @range/clipmode both @range/bounds 0 1 @repetitions/allow 0 @ramp/drive none @priority 1 @description \"1: start recording the sequence from current position (if syncStart on, recording will synchronously to the first incoming event, 0: stop recording\"",
+					"text" : "jcom.message record/record @type boolean @range/clipmode both @range/bounds 0 1 @repetitions/allow 0 @ramp/drive none @priority 1 @description \"1: start recording the sequence from current position (if syncStart on, recording will synchronously to the first incoming event), 0: stop recording (resets recording position to 0)\"",
 					"varname" : "hue_angle[1]"
 				}
 
@@ -911,8 +911,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 20.0, 118.0, 217.895523, 17.0 ],
-									"presentation_rect" : [ 20.0, 118.0, 217.895523, 17.0 ],
+									"patching_rect" : [ 20.0, 118.0, 215.711929, 17.0 ],
+									"presentation_rect" : [ 20.0, 118.0, 215.711929, 17.0 ],
 									"text" : [ "_($gr.params.fvec refer (getobj $1) col 0);" ]
 								}
 
@@ -1194,7 +1194,7 @@
 					"persistence" : 0,
 					"presentation_rect" : [ 297.0, 551.0, 178.666016, 19.0 ],
 					"scope" : 0,
-					"text" : "gr.params.seq"
+					"text" : "sequence fvec"
 				}
 
 			}
@@ -1210,8 +1210,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 538.0, 366.0, 151.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"ftm_objref_conv" : 0,
-						"ftm_scope" : 2
+						"ftm_scope" : 2,
+						"ftm_objref_conv" : 0
 					}
 ,
 					"text" : "ftm.record $gr.params.seq"
@@ -1802,7 +1802,16 @@
 				"patchline" : 				{
 					"destination" : [ "obj-83", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 1352.5, 381.0, 1242.5, 381.0 ],
+					"midpoints" : [  ],
+					"source" : [ "obj-75", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-99", 1 ],
+					"hidden" : 0,
+					"midpoints" : [ 1352.5, 318.0, 1319.5, 318.0, 1319.5, 279.0, 1286.5, 279.0 ],
 					"source" : [ "obj-75", 0 ]
 				}
 

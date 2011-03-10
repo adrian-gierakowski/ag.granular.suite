@@ -270,7 +270,7 @@
 					"args" : [ "mixpad" ],
 					"id" : "obj-32",
 					"maxclass" : "bpatcher",
-					"name" : "jmod.presetmixpad.maxpat",
+					"name" : "jmod.ag.presetmixpad.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
@@ -317,7 +317,7 @@
 					"name" : "jmod.ag.granular.control.maxpat",
 					"numinlets" : 3,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 19.0, 185.0, 300.0, 70.0 ],
 					"presentation_rect" : [ 15.0, 15.0, 300.0, 70.0 ]
 				}

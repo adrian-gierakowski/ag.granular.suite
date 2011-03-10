@@ -84,6 +84,7 @@
 					"borderoncolor" : [ 0.388235, 0.388235, 0.388235, 1.0 ],
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
+					"hint" : "/play/loop",
 					"id" : "obj-38",
 					"maxclass" : "textbutton",
 					"mode" : 1,
@@ -91,7 +92,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"outputmode" : 0,
-					"patching_rect" : [ 1608.0, 157.099731, 36.0, 17.0 ],
+					"patching_rect" : [ 1608.0, 142.099731, 36.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 42.852966, 21.217949, 40.294117, 14.564102 ],
 					"rounded" : 2.0,
@@ -112,6 +113,7 @@
 					"borderoncolor" : [ 0.388235, 0.388235, 0.388235, 1.0 ],
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
+					"hint" : "/play/pause",
 					"id" : "obj-40",
 					"maxclass" : "textbutton",
 					"mode" : 1,
@@ -140,6 +142,7 @@
 					"borderoncolor" : [ 0.388235, 0.388235, 0.388235, 1.0 ],
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
+					"hint" : "/play/play",
 					"id" : "obj-41",
 					"maxclass" : "textbutton",
 					"mode" : 1,
@@ -147,7 +150,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"outputmode" : 0,
-					"patching_rect" : [ 1607.0, 316.099731, 36.0, 17.0 ],
+					"patching_rect" : [ 1607.0, 301.099731, 36.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.852966, 21.217949, 40.294117, 14.564102 ],
 					"rounded" : 2.0,
@@ -395,7 +398,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1655.0, 550.0, 559.0, 31.0 ],
-					"text" : "jcom.parameter play/pause @type boolean @range/clipmode both @range/bounds 0 1 @repetitions/allow 0 @ramp/drive none @priority 2 @description \"pause playback \"",
+					"text" : "jcom.parameter play/pause @type boolean @range/clipmode both @range/bounds 0 1 @repetitions/allow 0 @ramp/drive none @priority 2 @description \"pause playback\"",
 					"varname" : "hue_angle[6]"
 				}
 
@@ -412,7 +415,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1655.0, 464.0, 593.0, 31.0 ],
-					"text" : "jcom.message play/stop @type none @range/clipmode none @repetitions/allow 1 @ramp/drive none @description \"stop playback and reset position to 0\"",
+					"text" : "jcom.message play/stop @type none @range/clipmode none @repetitions/allow 1 @ramp/drive none @description \"stop playback and reset playback position to the beginning of the segment\"",
 					"varname" : "hue_angle[5]"
 				}
 
@@ -423,13 +426,13 @@
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"id" : "obj-14",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1655.0, 150.0, 550.0, 31.0 ],
-					"text" : "jcom.parameter play/loop @type boolean @range/clipmode both @range/bounds 0 1 @repetitions/allow 0 @ramp/drive none @priority 1 @description \"1: play the sequence in loop mode, 0: stop playback\"",
+					"patching_rect" : [ 1655.0, 135.0, 550.0, 43.0 ],
+					"text" : "jcom.parameter play/loop @type boolean @range/clipmode both @range/bounds 0 1 @repetitions/allow 0 @ramp/drive none @priority 1 @description \"1: play the sequence in loop mode (loop is defined by play/segment/beginning and play/segment/end parameters), 0: stop playback\"",
 					"varname" : "hue_angle[4]"
 				}
 
@@ -453,13 +456,13 @@
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"id" : "obj-19",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1655.0, 305.0, 564.0, 43.0 ],
-					"text" : "jcom.message play/play @type boolean @range/clipmode both @range/bounds 0 1 @repetitions/allow 0 @ramp/drive none @priority 1 @description \"1: play the sequence from current position until the end of loop (segment) and stop, 0: stop playback\"",
+					"patching_rect" : [ 1655.0, 290.0, 588.0, 55.0 ],
+					"text" : "jcom.message play/play @type boolean @range/clipmode both @range/bounds 0 1 @repetitions/allow 0 @ramp/drive none @priority 1 @description \"1: play the sequence from current playback position until the end of loop (segment) and stop (f the sequence is currently playing in loop mode, you can use this message to stop the playback when the end of current segment is reached), 0: stop playback\"",
 					"varname" : "hue_angle[1]"
 				}
 
@@ -765,7 +768,7 @@
 					"persistence" : 0,
 					"presentation_rect" : [ 228.0, 748.0, 177.666016, 19.0 ],
 					"scope" : 0,
-					"text" : "gr.params.seq.fmat"
+					"text" : "fmat 0 21"
 				}
 
 			}
@@ -1097,7 +1100,7 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 7.0,
-					"hint" : "/segment/end",
+					"hint" : "/play/segment/end",
 					"id" : "obj-320",
 					"maxclass" : "flonum",
 					"minimum" : 0.0,
@@ -1114,7 +1117,7 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 7.0,
-					"hint" : "/segment/beginning",
+					"hint" : "/play//segment/beginning",
 					"id" : "obj-311",
 					"maxclass" : "flonum",
 					"minimum" : 0.0,
@@ -1415,8 +1418,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 916.0, 346.0, 596.0, 31.0 ],
-					"text" : "jcom.parameter segment/end @type decimal @range/clipmode low @range/bounds 0 100000 @repetitions/allow 0 @ramp/drive scheduler @description \"set the end of playback loop [ms]\"",
+					"patching_rect" : [ 916.0, 346.0, 517.0, 31.0 ],
+					"text" : "jcom.parameter play/segment/end @type decimal @range/clipmode low @range/bounds 0 100000 @repetitions/allow 0 @ramp/drive scheduler @description \"end of playback segment (or loop) [ms]\"",
 					"varname" : "hue_angle[9]"
 				}
 
@@ -1432,8 +1435,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 863.0, 263.0, 519.0, 31.0 ],
-					"text" : "jcom.parameter segment/beginning @type decimal @range/clipmode low @range/bounds 0 100000 @repetitions/allow 0 @ramp/drive scheduler @description \"set the beginig of playback loop [ms]\"",
+					"patching_rect" : [ 863.0, 264.0, 545.0, 31.0 ],
+					"text" : "jcom.parameter play/segment/beginning @type decimal @range/clipmode low @range/bounds 0 100000 @repetitions/allow 0 @ramp/drive scheduler @description \"beginig of playback segment (or loop) [ms]\"",
 					"varname" : "hue_angle[8]"
 				}
 
@@ -1466,8 +1469,8 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1108.0, 598.0, 133.0, 19.0 ],
 					"saved_object_attributes" : 					{
-						"ftm_objref_conv" : 0,
-						"ftm_scope" : 2
+						"ftm_scope" : 2,
+						"ftm_objref_conv" : 0
 					}
 ,
 					"text" : "ftm.play $gr.params.seq"

@@ -5,8 +5,9 @@
 		xsi:schemaLocation='http://jamoma.org/ file:jamoma.xsd'
 >
   <preset number='1' name='default'>
-    <item name='listen' type='boolean' priority='0' mixweight='1'>1</item>
+    <item name='mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='record/mode' type='string' priority='0' mixweight='1'>clear</item>
+    <item name='record/pause' type='boolean' priority='2' mixweight='1'>0</item>
     <item name='syncStart' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='view/color/border' type='array' priority='0' mixweight='1'>0</item>
     <item name='view/color/contentBackground' type='array' priority='0' mixweight='1'>0</item>

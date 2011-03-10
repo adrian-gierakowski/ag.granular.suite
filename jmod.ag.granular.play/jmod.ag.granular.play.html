@@ -47,7 +47,7 @@ Number of signal outlets: <code> 0 </code> </p>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> 1: play the sequence in loop mode, 0: stop playback </td>
+			<td class ="instructionDescription"> 1: play the sequence in loop mode (loop is defined by play/segment/beginning and play/segment/end parameters), 0: stop playback </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> play/pause </td>
@@ -59,7 +59,31 @@ Number of signal outlets: <code> 0 </code> </p>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> pause playback  </td>
+			<td class ="instructionDescription"> pause playback </td>
+		<tr>
+		<tr>
+			<td class="instructionName"> play/segment/beginning </td>
+			<td class ="instructionType"> decimal </td>
+			<td class ="instructionRangeBounds"> 0.000000 100000.000000 </td>
+			<td class ="instructionRangeClipmode"> low </td>
+			<td class ="instructionRampDrive"> scheduler </td>
+			<td class ="instructionRampFunction"> linear </td>
+			<td class ="instructionDataspace"> none </td>
+			<td class ="instructionDataspaceUnitNative"> none </td>
+			<td class ="instructionRepetitionsAllow"> 0 </td>
+			<td class ="instructionDescription"> beginig of playback segment (or loop) [ms] </td>
+		<tr>
+		<tr>
+			<td class="instructionName"> play/segment/end </td>
+			<td class ="instructionType"> decimal </td>
+			<td class ="instructionRangeBounds"> 0.000000 100000.000000 </td>
+			<td class ="instructionRangeClipmode"> low </td>
+			<td class ="instructionRampDrive"> scheduler </td>
+			<td class ="instructionRampFunction"> linear </td>
+			<td class ="instructionDataspace"> none </td>
+			<td class ="instructionDataspaceUnitNative"> none </td>
+			<td class ="instructionRepetitionsAllow"> 0 </td>
+			<td class ="instructionDescription"> end of playback segment (or loop) [ms] </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> play/speed </td>
@@ -72,30 +96,6 @@ Number of signal outlets: <code> 0 </code> </p>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
 			<td class ="instructionDescription"> set playback speed (1: original speed, 2: double speed, 0.5: half speed, -1: backward at original speed) </td>
-		<tr>
-		<tr>
-			<td class="instructionName"> segment/beginning </td>
-			<td class ="instructionType"> decimal </td>
-			<td class ="instructionRangeBounds"> 0.000000 100000.000000 </td>
-			<td class ="instructionRangeClipmode"> low </td>
-			<td class ="instructionRampDrive"> scheduler </td>
-			<td class ="instructionRampFunction"> linear </td>
-			<td class ="instructionDataspace"> none </td>
-			<td class ="instructionDataspaceUnitNative"> none </td>
-			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> set the beginig of playback loop [ms] </td>
-		<tr>
-		<tr>
-			<td class="instructionName"> segment/end </td>
-			<td class ="instructionType"> decimal </td>
-			<td class ="instructionRangeBounds"> 0.000000 100000.000000 </td>
-			<td class ="instructionRangeClipmode"> low </td>
-			<td class ="instructionRampDrive"> scheduler </td>
-			<td class ="instructionRampFunction"> linear </td>
-			<td class ="instructionDataspace"> none </td>
-			<td class ="instructionDataspaceUnitNative"> none </td>
-			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> set the end of playback loop [ms] </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> sequence/autoload/filepath </td>
@@ -245,7 +245,7 @@ Number of signal outlets: <code> 0 </code> </p>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> 1: play the sequence from current position until the end of loop (segment) and stop, 0: stop playback </td>
+			<td class ="instructionDescription"> 1: play the sequence from current playback position until the end of loop (segment) and stop (f the sequence is currently playing in loop mode, you can use this message to stop the playback when the end of current segment is reached), 0: stop playback </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> play/stop </td>
@@ -257,7 +257,7 @@ Number of signal outlets: <code> 0 </code> </p>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 1 </td>
-			<td class ="instructionDescription"> stop playback and reset position to 0 </td>
+			<td class ="instructionDescription"> stop playback and reset playback position to the beginning of the segment </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> preset/clear </td>

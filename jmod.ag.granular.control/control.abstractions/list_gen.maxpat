@@ -162,7 +162,7 @@
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"framecolor" : [ 0.388235, 0.388235, 0.388235, 1.0 ],
-					"hint" : "copy list of values to parameter",
+					"hint" : "name of the parameter unit to copy a list of values to ",
 					"id" : "obj-46",
 					"items" : [ "source", ",", "position", ",", "length", ",", "transposition", ",", "delay", ",", "gain", ",", "stereo-out", ",", "send1-level", ",", "send1-chan", ",", "send2-level", ",", "send2-chan" ],
 					"maxclass" : "umenu",
@@ -185,7 +185,7 @@
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"framecolor" : [ 0.388235, 0.388235, 0.388235, 1.0 ],
-					"hint" : "copy from list of values from parameter",
+					"hint" : "name of the parameter unit to copy a list of values from ",
 					"id" : "obj-45",
 					"items" : [ "source", ",", "position", ",", "length", ",", "transposition", ",", "delay", ",", "gain", ",", "stereo-out", ",", "send1-level", ",", "send1-chan", ",", "send2-level", ",", "send2-chan" ],
 					"maxclass" : "umenu",
@@ -554,13 +554,13 @@
 ,
 					"patching_rect" : [ 565.0, 568.0, 47.0, 19.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
 						"globalpatchername" : "",
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"fontname" : "Verdana",
+						"default_fontsize" : 10.0
 					}
 ,
 					"text" : "p route"
@@ -688,6 +688,7 @@
 , 			{
 				"box" : 				{
 					"description" : "fmat 512 1",
+					"editor_interface" : "",
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"ftm_objref_conv" : 0,
@@ -1031,13 +1032,13 @@
 ,
 					"patching_rect" : [ 440.0, 102.0, 83.0, 19.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
 						"globalpatchername" : "",
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"fontname" : "Verdana",
+						"default_fontsize" : 10.0
 					}
 ,
 					"text" : "p set_visibility"
@@ -1170,6 +1171,7 @@
 				"box" : 				{
 					"args" : [  ],
 					"embed" : 1,
+					"hidden" : 1,
 					"id" : "obj-9",
 					"maxclass" : "bpatcher",
 					"name" : "listgen_curve_exp_log.maxpat",
@@ -1709,6 +1711,7 @@
 				"box" : 				{
 					"args" : [  ],
 					"embed" : 1,
+					"hidden" : 1,
 					"id" : "obj-8",
 					"maxclass" : "bpatcher",
 					"name" : "listgen_curve_power.maxpat",
@@ -2340,6 +2343,7 @@
 , 			{
 				"box" : 				{
 					"description" : "fmat 512 1",
+					"editor_interface" : "",
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"ftm_objref_conv" : 0,
@@ -2416,6 +2420,7 @@
 					"domainscrollbar_visible" : 0,
 					"ftm_objref_conv" : 0,
 					"ftm_scope" : 0,
+					"hint" : "graphical display of the list of generated values",
 					"id" : "obj-43",
 					"layout" : 0,
 					"maxclass" : "ftm.editor",
@@ -2455,6 +2460,7 @@
 					"bordercolor" : [ 0.388235, 0.388235, 0.388235, 1.0 ],
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
+					"hint" : "list of generated values",
 					"id" : "obj-15",
 					"maxclass" : "textedit",
 					"numinlets" : 1,
@@ -2471,7 +2477,6 @@
 				"box" : 				{
 					"args" : [  ],
 					"embed" : 1,
-					"hidden" : 1,
 					"id" : "obj-1",
 					"maxclass" : "bpatcher",
 					"name" : "listgen_random.maxpat",

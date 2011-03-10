@@ -5,10 +5,12 @@
 		xsi:schemaLocation='http://jamoma.org/ file:jamoma.xsd'
 >
   <preset number='1' name='default'>
+    <item name='play/loop' type='boolean' priority='1' mixweight='1'>0</item>
+    <item name='play/pause' type='boolean' priority='2' mixweight='1'>0</item>
+    <item name='play/segment/beginning' type='decimal' priority='0' mixweight='1'>0.000000</item>
+    <item name='play/segment/end' type='decimal' priority='0' mixweight='1'>0.000000</item>
     <item name='play/speed' type='decimal' priority='0' mixweight='1'>1.000000</item>
-    <item name='segment/beginning' type='decimal' priority='0' mixweight='1'>0</item>
-    <item name='segment/end' type='decimal' priority='0' mixweight='1'>0.000000</item>
-    <item name='sequence/autoload' type='string' priority='0' mixweight='1'>nil</item>
+    <item name='sequence/autoload/filepath' type='string' priority='0' mixweight='1'>nil</item>
     <item name='view/color/border' type='array' priority='0' mixweight='1'>0</item>
     <item name='view/color/contentBackground' type='array' priority='0' mixweight='1'>0</item>
     <item name='view/color/toolbarBackground' type='array' priority='0' mixweight='1'>0</item>

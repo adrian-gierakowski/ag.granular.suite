@@ -22,6 +22,20 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"id" : "obj-48",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 157.0, 475.0, 134.0, 17.0 ],
+					"text" : "documentation/generate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
 					"fontsize" : 14.0,
 					"id" : "obj-51",
 					"linecount" : 4,
@@ -3099,12 +3113,12 @@
 									"patching_rect" : [ 11.919998, 381.369995, 211.0, 24.0 ],
 									"saved_object_attributes" : 									{
 										"globalpatchername" : "",
-										"default_fontname" : "Verdana",
-										"fontname" : "Verdana",
-										"default_fontsize" : 10.0,
 										"fontface" : 0,
 										"fontsize" : 10.0,
-										"default_fontface" : 0
+										"default_fontface" : 0,
+										"default_fontname" : "Verdana",
+										"fontname" : "Verdana",
+										"default_fontsize" : 10.0
 									}
 ,
 									"text" : "p gain_channels_gain_delay"
@@ -4504,12 +4518,12 @@
 									"patching_rect" : [ 460.0, 162.0, 99.0, 24.0 ],
 									"saved_object_attributes" : 									{
 										"globalpatchername" : "",
-										"default_fontname" : "Verdana",
-										"fontname" : "Verdana",
-										"default_fontsize" : 10.0,
 										"fontface" : 0,
 										"fontsize" : 10.0,
-										"default_fontface" : 0
+										"default_fontface" : 0,
+										"default_fontname" : "Verdana",
+										"fontname" : "Verdana",
+										"default_fontsize" : 10.0
 									}
 ,
 									"text" : "p windowing"
@@ -5525,12 +5539,12 @@
 					"patching_rect" : [ 596.0, 498.5, 177.0, 28.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : "",
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"fontname" : "Verdana",
+						"default_fontsize" : 10.0
 					}
 ,
 					"text" : "p generate.grain",
@@ -5616,7 +5630,6 @@
 						"enablehscroll" : 1,
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Verdana",
@@ -5858,8 +5871,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1270.0, 214.25, 114.0, 17.0 ],
-													"presentation_rect" : [ 1270.0, 214.25, 114.0, 17.0 ],
+													"patching_rect" : [ 1270.0, 214.25, 114.286118, 17.0 ],
+													"presentation_rect" : [ 1270.0, 214.25, 114.286118, 17.0 ],
 													"text" : [ "_$samples.paths.temp" ]
 												}
 
@@ -7066,12 +7079,12 @@
 									"patching_rect" : [ 995.0, 214.0, 199.0, 24.0 ],
 									"saved_object_attributes" : 									{
 										"globalpatchername" : "",
-										"default_fontname" : "Verdana",
-										"fontname" : "Verdana",
-										"default_fontsize" : 10.0,
 										"fontface" : 0,
 										"fontsize" : 10.0,
-										"default_fontface" : 0
+										"default_fontface" : 0,
+										"default_fontname" : "Verdana",
+										"fontname" : "Verdana",
+										"default_fontsize" : 10.0
 									}
 ,
 									"text" : "p load_collection_from_txt"
@@ -7177,7 +7190,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 680.0, 243.0, 603.0, 31.0 ],
-									"text" : "jcom.message samples/clear @type none @repetitions/allow 1 @range/clipmode none @description \"clear all loaded samples\""
+									"text" : "jcom.message samples/clear @type none @repetitions/allow 1 @range/clipmode none @description \"clear all loaded samples and related data\""
 								}
 
 							}
@@ -7221,8 +7234,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 680.0, 136.0, 588.0, 43.0 ],
-									"text" : "jcom.parameter samples/load/collection/filepath @type string @repetitions/allow 0 @range/clipmode none @description \"load a collection of samples using a previously saved text file containing absolute paths to their locations (or just thier names if they reside in Max search path).\""
+									"patching_rect" : [ 680.0, 136.0, 590.0, 43.0 ],
+									"text" : "jcom.parameter samples/load/collection/filepath @type string @repetitions/allow 0 @range/clipmode none @description \"load a collection of samples using a previously saved text file containing their absolute paths on the HDD and range selection data\""
 								}
 
 							}
@@ -7236,7 +7249,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1502.0, 57.0, 180.0, 19.0 ],
+									"patching_rect" : [ 681.0, 609.0, 180.0, 19.0 ],
 									"text" : "r #0/samples/save/collection.to"
 								}
 
@@ -7250,7 +7263,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1502.0, 126.5, 195.0, 19.0 ],
+									"patching_rect" : [ 681.0, 678.5, 195.0, 19.0 ],
 									"text" : "s #0/samples/save/collection.from"
 								}
 
@@ -7266,8 +7279,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 1502.0, 79.5, 588.0, 43.0 ],
-									"text" : "jcom.parameter samples/save/collection @type string @repetitions/allow 0 @range/clipmode none @description \"save a collection of samples using a previously saved text file containing absolute paths to their locations (or just thier names if they reside in Max search path).\""
+									"patching_rect" : [ 681.0, 631.5, 581.0, 43.0 ],
+									"text" : "jcom.parameter samples/save/collection @type string @repetitions/allow 0 @range/clipmode none @description \"save a collection of samples and related data to a text file. The collection can be loaded at later time using samples/load/collection/filepath message\""
 								}
 
 							}
@@ -7279,7 +7292,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1726.0, 514.0, 199.0, 19.0 ],
+									"patching_rect" : [ 907.0, 963.0, 199.0, 19.0 ],
 									"text" : "s #0_wave.editors.update.selection"
 								}
 
@@ -7293,7 +7306,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1500.0, 421.0, 224.0, 19.0 ],
+									"patching_rect" : [ 681.0, 898.0, 224.0, 19.0 ],
 									"text" : "s #0/samples/all/reset/selection.from"
 								}
 
@@ -7308,7 +7321,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1500.0, 354.0, 210.0, 19.0 ],
+									"patching_rect" : [ 681.0, 831.0, 210.0, 19.0 ],
 									"text" : "r #0/samples/all/reset/selection.to"
 								}
 
@@ -7324,8 +7337,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 1500.0, 380.0, 541.0, 31.0 ],
-									"text" : "jcom.message samples/all/reset/selection @type none @repetitions/allow 1 @range/clipmode none @description \"reset range selection of current sample slot (defined by samples/selectSlot message)\""
+									"patching_rect" : [ 681.0, 857.0, 585.0, 31.0 ],
+									"text" : "jcom.message samples/all/reset/selection @type none @repetitions/allow 1 @range/clipmode none @description \"reset range selection all samples\""
 								}
 
 							}
@@ -7337,7 +7350,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1720.0, 322.0, 199.0, 19.0 ],
+									"patching_rect" : [ 901.0, 799.0, 199.0, 19.0 ],
 									"text" : "s #0_wave.editors.update.selection"
 								}
 
@@ -7351,7 +7364,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1500.0, 293.0, 235.0, 19.0 ],
+									"patching_rect" : [ 681.0, 770.0, 235.0, 19.0 ],
 									"text" : "s #0/samples/current/reset/selection.from"
 								}
 
@@ -7366,7 +7379,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1500.0, 226.0, 220.0, 19.0 ],
+									"patching_rect" : [ 681.0, 703.0, 220.0, 19.0 ],
 									"text" : "r #0/samples/current/reset/selection.to"
 								}
 
@@ -7382,7 +7395,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 1500.0, 252.0, 541.0, 31.0 ],
+									"patching_rect" : [ 681.0, 729.0, 541.0, 31.0 ],
 									"text" : "jcom.message samples/current/reset/selection @type none @repetitions/allow 1 @range/clipmode none @description \"reset range selection of current sample slot (defined by samples/selectSlot message)\""
 								}
 
@@ -7795,12 +7808,12 @@
 									"patching_rect" : [ 1259.0, 351.666656, 168.0, 19.0 ],
 									"saved_object_attributes" : 									{
 										"globalpatchername" : "",
-										"default_fontname" : "Arial",
-										"fontname" : "Arial",
-										"default_fontsize" : 12.0,
 										"fontface" : 0,
 										"fontsize" : 12.0,
-										"default_fontface" : 0
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"fontname" : "Arial",
+										"default_fontsize" : 12.0
 									}
 ,
 									"text" : "p reset.stuff.related.to.samples"
@@ -7861,7 +7874,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 1823.0, 442.0, 32.5, 20.0 ],
+									"patching_rect" : [ 1034.0, 919.0, 32.5, 20.0 ],
 									"text" : "- 1"
 								}
 
@@ -7875,7 +7888,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "bang", "int" ],
-									"patching_rect" : [ 1767.0, 442.0, 46.0, 20.0 ],
+									"patching_rect" : [ 978.0, 919.0, 46.0, 20.0 ],
 									"text" : "uzi"
 								}
 
@@ -7895,8 +7908,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1767.0, 422.0, 76.185539, 17.0 ],
-									"presentation_rect" : [ 1767.0, 422.0, 76.185539, 17.0 ],
+									"patching_rect" : [ 978.0, 899.0, 76.185539, 17.0 ],
+									"presentation_rect" : [ 978.0, 899.0, 76.185539, 17.0 ],
 									"text" : [ "_$samples.size" ]
 								}
 
@@ -7916,8 +7929,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1823.0, 468.0, 494.707153, 18.0 ],
-									"presentation_rect" : [ 1823.0, 468.0, 494.707153, 18.0 ],
+									"patching_rect" : [ 1034.0, 945.0, 494.707153, 18.0 ],
+									"presentation_rect" : [ 1034.0, 945.0, 494.707153, 18.0 ],
 									"text" : [ "_($samples.len.off.sel.fmat set $1 2 0 0 1 1 0 0 $samples.len.fvec[$1] $samples.len.fvec[$1]);" ]
 								}
 
@@ -7937,8 +7950,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1761.0, 291.0, 778.804565, 18.0 ],
-									"presentation_rect" : [ 1761.0, 291.0, 778.804565, 18.0 ],
+									"patching_rect" : [ 942.0, 768.0, 778.804565, 18.0 ],
+									"presentation_rect" : [ 942.0, 768.0, 778.804565, 18.0 ],
 									"text" : [ "_($samples.len.off.sel.fmat set $current.sample.slot 2 0 0 1 1 0 0 $samples.len.fvec[$current.sample.slot] $samples.len.fvec[$current.sample.slot]);" ]
 								}
 
@@ -7984,7 +7997,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 680.0, 359.0, 578.0, 31.0 ],
-									"text" : "jcom.message samples/load/file @type string @repetitions/allow 1 @range/clipmode none @description \"load a single samples from a hard drive using absolute paths or just its name if it resides in Max search path\""
+									"text" : "jcom.message samples/load/file @type string @repetitions/allow 1 @range/clipmode none @description \"load a single sample from a hard drive using absolute paths or just its name if it resides in Max search path\""
 								}
 
 							}
@@ -7998,7 +8011,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 23.0, 587.0, 115.0, 19.0 ],
+									"patching_rect" : [ 23.0, 696.0, 115.0, 19.0 ],
 									"text" : "r #0/get/ftmIDs.to"
 								}
 
@@ -8009,13 +8022,13 @@
 									"fontname" : "Verdana",
 									"fontsize" : 10.0,
 									"id" : "obj-28",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 23.0, 613.0, 588.0, 31.0 ],
-									"text" : "jcom.message get/ftmIDs @type none @repetitions/allow 1 @description \"bang to get FTM IDs of parameter fvec and samples data fmat\""
+									"patching_rect" : [ 23.0, 722.0, 603.0, 43.0 ],
+									"text" : "jcom.message get/ftmIDs @type none @repetitions/allow 1 @description \"this message is used to sync grain parameter and sample data with other modules connected to the engine (does the same as pressing the sync button on the engines front panel\""
 								}
 
 							}
@@ -8029,7 +8042,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 662.0, 794.0, 316.0, 143.0 ],
+									"patching_rect" : [ 342.0, 15.0, 316.0, 143.0 ],
 									"text" : "UI objects are connected to corresponding jcom.parameter or jcom.message objects through send and receive objects which names reflect the OSC addresses of a particular parameteres\\messages. The addresses are preceded by #0 in order to make the send/receive names unique to the particular instance of the module.",
 									"textcolor" : [ 0.541176, 0.717647, 0.145098, 1.0 ]
 								}
@@ -8045,7 +8058,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 325.0, 793.0, 329.0, 58.0 ],
+									"patching_rect" : [ 5.0, 14.0, 329.0, 58.0 ],
 									"text" : "jcom.parameter and jcom.message objects are placed in a separate subpatcher in order to de-clutter the main patch",
 									"textcolor" : [ 0.541176, 0.717647, 0.145098, 1.0 ]
 								}
@@ -8061,7 +8074,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 21.0, 114.0, 152.0, 19.0 ],
+									"patching_rect" : [ 21.0, 265.0, 152.0, 19.0 ],
 									"text" : "r #0/source/interpolate.to"
 								}
 
@@ -8075,7 +8088,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 81.0, 223.0, 32.5, 19.0 ],
+									"patching_rect" : [ 81.0, 374.0, 32.5, 19.0 ],
 									"text" : "> 0."
 								}
 
@@ -8089,7 +8102,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 81.0, 243.0, 70.0, 19.0 ],
+									"patching_rect" : [ 81.0, 394.0, 70.0, 19.0 ],
 									"text" : "prepend set"
 								}
 
@@ -8104,7 +8117,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "float" ],
-									"patching_rect" : [ 21.0, 201.0, 79.0, 19.0 ],
+									"patching_rect" : [ 21.0, 352.0, 79.0, 19.0 ],
 									"text" : "unpack set 0."
 								}
 
@@ -8118,7 +8131,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 81.0, 263.0, 166.0, 19.0 ],
+									"patching_rect" : [ 81.0, 414.0, 166.0, 19.0 ],
 									"text" : "s #0/source/interpolate.from"
 								}
 
@@ -8134,7 +8147,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 21.0, 142.0, 600.0, 55.0 ],
+									"patching_rect" : [ 21.0, 293.0, 600.0, 55.0 ],
 									"text" : "jcom.parameter source/interpolate @type decimal @range/clipmode both @range/bounds 0 1 @priority 1 @description \"toggles per grain source interpolation (2 sources are defined by the source parameter in the following way: source1 = floor(source), source1 = ceiling(source), interpolation factor = fractional_part(source). Example: source = 3.6 -> source1 = 3, source2 = 4, interpolation factor = 0.6\""
 								}
 
@@ -8149,7 +8162,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 21.0, 514.0, 102.0, 19.0 ],
+									"patching_rect" : [ 21.0, 623.0, 102.0, 19.0 ],
 									"text" : "r #0/ola/clear.to"
 								}
 
@@ -8164,7 +8177,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 21.0, 313.0, 133.0, 19.0 ],
+									"patching_rect" : [ 21.0, 437.0, 133.0, 19.0 ],
 									"text" : "r #0/ola/interpolate.to"
 								}
 
@@ -8178,7 +8191,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 80.0, 434.0, 32.5, 19.0 ],
+									"patching_rect" : [ 80.0, 558.0, 32.5, 19.0 ],
 									"text" : "> 0."
 								}
 
@@ -8192,7 +8205,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 80.0, 454.0, 70.0, 19.0 ],
+									"patching_rect" : [ 80.0, 578.0, 70.0, 19.0 ],
 									"text" : "prepend set"
 								}
 
@@ -8207,7 +8220,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "float" ],
-									"patching_rect" : [ 21.0, 410.0, 79.0, 19.0 ],
+									"patching_rect" : [ 21.0, 534.0, 79.0, 19.0 ],
 									"text" : "unpack set 0."
 								}
 
@@ -8221,7 +8234,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 80.0, 474.0, 148.0, 19.0 ],
+									"patching_rect" : [ 80.0, 598.0, 148.0, 19.0 ],
 									"text" : "s #0/ola/interpolate.from"
 								}
 
@@ -8237,8 +8250,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 21.0, 341.0, 597.0, 55.0 ],
-									"text" : "jcom.parameter ola/interpolate @type decimal @range/clipmode both @range/bounds 0 1 @priority 1 @description \"toggles sub sample accurate grain triggering. Only realy usefull when grains are triggered synchronously at audio rate and no parameters are randomised. Otherwise it doesn't give any audible benefits and unnecessarily uses CPU resources (0:off,1:on)\""
+									"patching_rect" : [ 21.0, 465.0, 597.0, 55.0 ],
+									"text" : "jcom.parameter ola/interpolate @type decimal @range/clipmode both @range/bounds 0 1 @priority 1 @description \"toggles sub sample accurate grain triggering. Only realy usefull when grains are triggered synchronously at audio rate and no parameters are randomised. Otherwise it doesn't give any audible benefits and unnecessarily uses CPU resources (0: off, 1: on)\""
 								}
 
 							}
@@ -8253,7 +8266,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 21.0, 541.0, 589.0, 31.0 ],
+									"patching_rect" : [ 21.0, 650.0, 589.0, 31.0 ],
 									"text" : "jcom.message ola/clear @type none @range/clipmode none @priority 0 @repetitions/allow 1 @description \"clears gbr.ola~ buffer removing all currently playing grains from the audio stream\""
 								}
 
@@ -8269,8 +8282,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 21.0, 49.0, 601.0, 43.0 ],
-									"text" : "jcom.parameter grains/on @type boolean @range/clipmode both @range/bounds 0 1 @priority 2 @repetitions/allow 1 @description \"toggles gating of incomming grain trigger messages. Trun it on in order to eneable grain triggering. (0: closed,1:open)\""
+									"patching_rect" : [ 21.0, 200.0, 609.0, 43.0 ],
+									"text" : "jcom.parameter grains/on @type boolean @range/clipmode both @range/bounds 0 1 @priority 2 @repetitions/allow 1 @description \"toggles gating of incoming grain trigger messages. Turn it on in order to enable grain triggering. (0:  closed, 1: open)\""
 								}
 
 							}
@@ -8284,7 +8297,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 21.0, 25.0, 107.0, 19.0 ],
+									"patching_rect" : [ 21.0, 176.0, 107.0, 19.0 ],
 									"text" : "r #0/grains/on.to"
 								}
 
@@ -8298,8 +8311,20 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 21.0, 93.0, 122.0, 19.0 ],
+									"patching_rect" : [ 21.0, 244.0, 122.0, 19.0 ],
 									"text" : "s #0/grains/on.from"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.94902, 0.94902, 0.94902, 1.0 ],
+									"border" : 1,
+									"id" : "obj-25",
+									"maxclass" : "panel",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 4.0, 6.0, 665.0, 168.0 ]
 								}
 
 							}
@@ -8850,12 +8875,12 @@
 					"patching_rect" : [ 585.0, 168.0, 212.0, 28.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : "",
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"fontname" : "Verdana",
+						"default_fontsize" : 10.0
 					}
 ,
 					"text" : "p jamoma.parameters"
@@ -9701,12 +9726,12 @@
 									"patching_rect" : [ 1147.0, 184.0, 66.0, 19.0 ],
 									"saved_object_attributes" : 									{
 										"globalpatchername" : "",
-										"default_fontname" : "Verdana",
-										"fontname" : "Verdana",
-										"default_fontsize" : 10.0,
 										"fontface" : 0,
 										"fontsize" : 10.0,
-										"default_fontface" : 0
+										"default_fontface" : 0,
+										"default_fontname" : "Verdana",
+										"fontname" : "Verdana",
+										"default_fontsize" : 10.0
 									}
 ,
 									"text" : "p pancurve"
@@ -10684,12 +10709,12 @@
 					"patching_rect" : [ 585.0, 134.0, 141.0, 28.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : "",
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"fontname" : "Verdana",
+						"default_fontsize" : 10.0
 					}
 ,
 					"text" : "p ftm.variabes"
@@ -10725,7 +10750,6 @@
 						"enablehscroll" : 1,
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Verdana",
@@ -11594,12 +11618,12 @@
 									"patching_rect" : [ 862.0, 214.333313, 53.0, 19.0 ],
 									"saved_object_attributes" : 									{
 										"globalpatchername" : "",
-										"default_fontname" : "Verdana",
-										"fontname" : "Verdana",
-										"default_fontsize" : 10.0,
 										"fontface" : 0,
 										"fontsize" : 10.0,
-										"default_fontface" : 0
+										"default_fontface" : 0,
+										"default_fontname" : "Verdana",
+										"fontname" : "Verdana",
+										"default_fontsize" : 10.0
 									}
 ,
 									"text" : "p iterate"
@@ -12215,12 +12239,12 @@
 									"patching_rect" : [ 517.37439, 604.40509, 93.0, 19.0 ],
 									"saved_object_attributes" : 									{
 										"globalpatchername" : "",
-										"default_fontname" : "Verdana",
-										"fontname" : "Verdana",
-										"default_fontsize" : 10.0,
 										"fontface" : 0,
 										"fontsize" : 10.0,
-										"default_fontface" : 0
+										"default_fontface" : 0,
+										"default_fontname" : "Verdana",
+										"fontname" : "Verdana",
+										"default_fontsize" : 10.0
 									}
 ,
 									"text" : "p waveeditor.init"
@@ -13500,12 +13524,12 @@
 									"patching_rect" : [ 68.0, 360.0, 247.0, 28.0 ],
 									"saved_object_attributes" : 									{
 										"globalpatchername" : "",
-										"default_fontname" : "Arial",
-										"fontname" : "Arial",
-										"default_fontsize" : 12.0,
 										"fontface" : 0,
 										"fontsize" : 12.0,
-										"default_fontface" : 0
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"fontname" : "Arial",
+										"default_fontsize" : 12.0
 									}
 ,
 									"text" : "p import.samples"
@@ -13735,12 +13759,12 @@
 									"patching_rect" : [ 372.0, 284.0, 87.0, 19.0 ],
 									"saved_object_attributes" : 									{
 										"globalpatchername" : "",
-										"default_fontname" : "Arial",
-										"fontname" : "Arial",
-										"default_fontsize" : 12.0,
 										"fontface" : 0,
 										"fontsize" : 12.0,
-										"default_fontface" : 0
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"fontname" : "Arial",
+										"default_fontsize" : 12.0
 									}
 ,
 									"text" : "p folder_loader"
@@ -14738,12 +14762,12 @@
 					"patching_rect" : [ 797.0, 428.0, 75.0, 28.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : "",
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"fontname" : "Verdana",
+						"default_fontsize" : 10.0
 					}
 ,
 					"text" : "p panel"
@@ -15176,6 +15200,15 @@
 					"hidden" : 0,
 					"midpoints" : [  ],
 					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ],
+					"source" : [ "obj-48", 0 ]
 				}
 
 			}
