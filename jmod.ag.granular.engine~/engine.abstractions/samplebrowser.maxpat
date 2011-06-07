@@ -21,6 +21,21 @@
 		"devicewidth" : 0.0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 14.0,
+					"id" : "obj-14",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 428.0, 256.0, 438.0, 55.0 ],
+					"text" : "THIS ABSTRACTION IS USED TO LOAD A FOLDER OF SAMPLES USING DRAG AND DROP METHOD. THE SAMPLES CAN BE THEN  BROWSED USING A UMENU."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-1",

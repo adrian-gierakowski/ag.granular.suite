@@ -21,6 +21,22 @@
 		"devicewidth" : 0.0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Verdana",
+					"fontsize" : 14.0,
+					"frgb" : [ 1.0, 0.501961, 0.0, 1.0 ],
+					"id" : "obj-20",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 942.173767, 703.732544, 147.429016, 24.0 ],
+					"text" : "trigger outlet ->",
+					"textcolor" : [ 1.0, 0.501961, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-94",
@@ -41,7 +57,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1019.0, 741.0, 226.0, 27.0 ],
+					"patching_rect" : [ 1119.0, 741.0, 226.0, 27.0 ],
 					"text" : "FTM.PLAY"
 				}
 
@@ -476,7 +492,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1048.0, 573.0, 94.0, 19.0 ],
+					"patching_rect" : [ 1087.635742, 558.966675, 94.0, 19.0 ],
 					"text" : "r #0_ftm.play.to"
 				}
 
@@ -490,7 +506,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1242.0, 628.0, 99.0, 19.0 ],
+					"patching_rect" : [ 1222.0, 628.0, 99.0, 19.0 ],
 					"text" : "s #0/play/stop.to"
 				}
 
@@ -688,7 +704,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1108.0, 704.0, 25.0, 25.0 ]
+					"patching_rect" : [ 1088.0, 704.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -701,7 +717,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 1108.0, 647.0, 32.5, 20.0 ],
+					"patching_rect" : [ 1088.0, 647.0, 32.5, 20.0 ],
 					"text" : "t b l"
 				}
 
@@ -938,12 +954,12 @@
 ,
 					"patching_rect" : [ 566.0, 42.0, 195.0, 28.0 ],
 					"saved_object_attributes" : 					{
+						"fontname" : "Verdana",
+						"default_fontface" : 0,
 						"globalpatchername" : "",
 						"fontface" : 0,
-						"fontsize" : 10.0,
-						"default_fontface" : 0,
 						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
+						"fontsize" : 10.0,
 						"default_fontsize" : 10.0
 					}
 ,
@@ -975,7 +991,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 1165.0, 627.0, 66.0, 15.0 ],
+					"patching_rect" : [ 1145.0, 627.0, 66.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 68.0, 37.0, 66.0, 15.0 ],
 					"triangle" : 0
@@ -1107,7 +1123,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 916.0, 316.0, 44.0, 15.0 ],
+					"patching_rect" : [ 915.0, 316.0, 44.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 232.333328, 21.0, 51.0, 15.0 ]
 				}
@@ -1140,7 +1156,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 925.0, 435.0, 46.0, 15.0 ],
+					"patching_rect" : [ 916.0, 435.0, 46.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 126.0, 21.0, 51.0, 15.0 ]
 				}
@@ -1318,8 +1334,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1122.0, 675.0, 141.386719, 18.0 ],
-					"presentation_rect" : [ 1122.0, 675.0, 141.386719, 18.0 ],
+					"patching_rect" : [ 1102.0, 675.0, 141.386719, 18.0 ],
+					"presentation_rect" : [ 1102.0, 675.0, 141.386719, 18.0 ],
 					"text" : [ "_($gr.params.fvec set $1);" ]
 				}
 
@@ -1418,7 +1434,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 916.0, 346.0, 517.0, 31.0 ],
+					"patching_rect" : [ 915.0, 346.0, 517.0, 31.0 ],
 					"text" : "jcom.parameter play/segment/end @type decimal @range/clipmode low @range/bounds 0 100000 @repetitions/allow 0 @ramp/drive scheduler @description \"end of playback segment (or loop) [ms]\"",
 					"varname" : "hue_angle[9]"
 				}
@@ -1452,7 +1468,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 925.0, 462.0, 591.0, 43.0 ],
+					"patching_rect" : [ 916.0, 462.0, 591.0, 43.0 ],
 					"text" : "jcom.parameter play/speed @type decimal @range/clipmode none @range/bounds 20 20 @repetitions/allow 0 @ramp/drive scheduler @description \"set playback speed (1: original speed, 2: double speed, 0.5: half speed, -1: backward at original speed)\"",
 					"varname" : "hue_angle[7]"
 				}
@@ -1467,7 +1483,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1108.0, 598.0, 133.0, 19.0 ],
+					"patching_rect" : [ 1088.0, 598.0, 133.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"ftm_scope" : 2,
 						"ftm_objref_conv" : 0
@@ -1486,7 +1502,7 @@
 					"outlettype" : [ "" ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 300.0, 70.0 ],
-					"text" : "/editing_this_module"
+					"text" : "/editing_this_module.2"
 				}
 
 			}
@@ -1508,7 +1524,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1008.0, 539.0, 345.0, 235.0 ]
+					"patching_rect" : [ 1078.0, 539.0, 255.689911, 233.535904 ]
 				}
 
 			}
@@ -2030,7 +2046,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-309", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 934.5, 511.0, 898.0, 511.0, 898.0, 425.0, 934.5, 425.0 ],
+					"midpoints" : [ 925.5, 511.0, 889.0, 511.0, 889.0, 425.0, 925.5, 425.0 ],
 					"source" : [ "obj-49", 0 ]
 				}
 
@@ -2066,7 +2082,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-320", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 925.5, 386.0, 877.0, 386.0, 877.0, 306.0, 925.5, 306.0 ],
+					"midpoints" : [ 924.5, 386.0, 876.0, 386.0, 876.0, 306.0, 924.5, 306.0 ],
 					"source" : [ "obj-51", 0 ]
 				}
 
@@ -2093,7 +2109,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 1263.5, 143.105621, 1174.5, 143.105621 ],
+					"midpoints" : [ 1263.5, 143.105621, 1154.5, 143.105621 ],
 					"source" : [ "obj-54", 0 ]
 				}
 

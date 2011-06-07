@@ -13,16 +13,16 @@ body {	margin: 0px;	font-family: Arial, Helvetica, sans-serif;}h1 {	font-size: 2
 	<div id="jmod_header">
 	<img src="../../../documentation/graphics/jmodular.icon.png" width="128" height="128">
 	<h1> jmod.ag.granular.control </h1>
-	<h2> generalized soundfile granulator </h2>
+	<h2> this module contains various algorithms for generating grain parameters and triggering </h2>
 	<h6><a href="../../../documentation/html/index.html">Table of Contents</a> | <a href="../../../documentation/html/modules.html">Index of Modules</a> | <a href="../../../documentation/html/credits.html">Credits</a> | <a href="http://pledgie.com/campaigns/5615">Donate</a> | <a href="http://www.jamoma.org/">Jamoma.org</a></h6>
 	</div>
 
 	<h3> Configuration </h3>
-	<p> Module Type: <code> audio </code> <br>
+	<p> Module Type: <code> control </code> <br>
 	Algorithm Type: <code> default </code> </p>
 	<p>Interface Size: <code> 300x70 pixels </code> </p>
 	<p>Number of signal inlets: <code> 1 </code> <br/>
-	Number of signal outlets: <code> 1 </code> </p>
+Number of signal outlets: <code> 0 </code> </p>
 	<h3> Parameters </h3>
 	<table>
 		<tr class="tableHeading2">
@@ -293,26 +293,13 @@ body {	margin: 0px;	font-family: Arial, Helvetica, sans-serif;}h1 {	font-size: 2
 			<td class="instructionName"> delay/random/maxdev </td>
 			<td class ="instructionType"> decimal </td>
 			<td class ="instructionRangeBounds"> 0.000000 1.000000 </td>
-			<td class ="instructionRangeClipmode"> none </td>
+			<td class ="instructionRangeClipmode"> low </td>
 			<td class ="instructionRampDrive"> scheduler </td>
 			<td class ="instructionRampFunction"> linear </td>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts just as a multiplier of their output. </td>
-		<tr>
-		<tr>
-			<td class="instructionName"> delay/random/mode </td>
-			<td class ="instructionType"> integer </td>
-			<td class ="instructionRangeBounds"> 0 2 </td>
-			<td class ="instructionRangeClipmode"> both </td>
-			<td class ="instructionRampDrive"> none </td>
-			<td class ="instructionRampFunction"> none </td>
-			<td class ="instructionDataspace"> none </td>
-			<td class ="instructionDataspaceUnitNative"> none </td>
-			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> mode of the randomiser, which determines how the randomly generated is applied to the current parameter value. 0: ABSOLUTE; 1: LINEAR SCALE: new.value = value + (random.value * maxdev), RELATIVE, LINEAR SCALE: 
-new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SCALE: new.value = value * power(maxdev, random.value). For the last mode the distribution is flat o logarithmic scale </td>
+			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts always as a multiplier of the output of the random number generator </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> delay/random/round </td>
@@ -546,26 +533,13 @@ new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SC
 			<td class="instructionName"> gain/random/maxdev </td>
 			<td class ="instructionType"> decimal </td>
 			<td class ="instructionRangeBounds"> 0.000000 1.000000 </td>
-			<td class ="instructionRangeClipmode"> none </td>
+			<td class ="instructionRangeClipmode"> low </td>
 			<td class ="instructionRampDrive"> scheduler </td>
 			<td class ="instructionRampFunction"> linear </td>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts just as a multiplier of their output. </td>
-		<tr>
-		<tr>
-			<td class="instructionName"> gain/random/mode </td>
-			<td class ="instructionType"> integer </td>
-			<td class ="instructionRangeBounds"> 0 2 </td>
-			<td class ="instructionRangeClipmode"> both </td>
-			<td class ="instructionRampDrive"> none </td>
-			<td class ="instructionRampFunction"> none </td>
-			<td class ="instructionDataspace"> none </td>
-			<td class ="instructionDataspaceUnitNative"> none </td>
-			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> mode of the randomiser, which determines how the randomly generated is applied to the current parameter value. 0: ABSOLUTE; 1: LINEAR SCALE: new.value = value + (random.value * maxdev), RELATIVE, LINEAR SCALE: 
-new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SCALE: new.value = value * power(maxdev, random.value). For the last mode the distribution is flat o logarithmic scale </td>
+			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts always as a multiplier of the output of the random number generator </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> gain/random/round </td>
@@ -871,13 +845,13 @@ new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SC
 			<td class="instructionName"> length/random/maxdev </td>
 			<td class ="instructionType"> decimal </td>
 			<td class ="instructionRangeBounds"> 0.000000 1.000000 </td>
-			<td class ="instructionRangeClipmode"> none </td>
+			<td class ="instructionRangeClipmode"> low </td>
 			<td class ="instructionRampDrive"> scheduler </td>
 			<td class ="instructionRampFunction"> linear </td>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts just as a multiplier of their output. </td>
+			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts always as a multiplier of the output of the random number generator </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> length/random/mode </td>
@@ -890,7 +864,7 @@ new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SC
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
 			<td class ="instructionDescription"> mode of the randomiser, which determines how the randomly generated is applied to the current parameter value. 0: ABSOLUTE; 1: LINEAR SCALE: new.value = value + (random.value * maxdev), RELATIVE, LINEAR SCALE: 
-new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SCALE: new.value = value * power(maxdev, random.value). For the last mode the distribution is flat o logarithmic scale </td>
+new.value = value + (value * random.value * maxdev); 2: RELATIVE, BASE-2 LOGARITHMIC SCALE: new.value = value * power(2, maxdev * random.value). For the last mode the uniform distribution is flat o a base-2 logarithmic scale </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> length/random/round </td>
@@ -1148,26 +1122,13 @@ new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SC
 			<td class="instructionName"> position/random/maxdev </td>
 			<td class ="instructionType"> decimal </td>
 			<td class ="instructionRangeBounds"> 0.000000 1.000000 </td>
-			<td class ="instructionRangeClipmode"> none </td>
+			<td class ="instructionRangeClipmode"> low </td>
 			<td class ="instructionRampDrive"> scheduler </td>
 			<td class ="instructionRampFunction"> linear </td>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts just as a multiplier of their output. </td>
-		<tr>
-		<tr>
-			<td class="instructionName"> position/random/mode </td>
-			<td class ="instructionType"> integer </td>
-			<td class ="instructionRangeBounds"> 0 2 </td>
-			<td class ="instructionRangeClipmode"> both </td>
-			<td class ="instructionRampDrive"> none </td>
-			<td class ="instructionRampFunction"> none </td>
-			<td class ="instructionDataspace"> none </td>
-			<td class ="instructionDataspaceUnitNative"> none </td>
-			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> mode of the randomiser, which determines how the randomly generated is applied to the current parameter value. 0: ABSOLUTE; 1: LINEAR SCALE: new.value = value + (random.value * maxdev), RELATIVE, LINEAR SCALE: 
-new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SCALE: new.value = value * power(maxdev, random.value). For the last mode the distribution is flat o logarithmic scale </td>
+			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts always as a multiplier of the output of the random number generator </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> position/random/round </td>
@@ -1449,26 +1410,13 @@ new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SC
 			<td class="instructionName"> send1-channel/random/maxdev </td>
 			<td class ="instructionType"> decimal </td>
 			<td class ="instructionRangeBounds"> 0.000000 1.000000 </td>
-			<td class ="instructionRangeClipmode"> none </td>
+			<td class ="instructionRangeClipmode"> low </td>
 			<td class ="instructionRampDrive"> scheduler </td>
 			<td class ="instructionRampFunction"> linear </td>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts just as a multiplier of their output. </td>
-		<tr>
-		<tr>
-			<td class="instructionName"> send1-channel/random/mode </td>
-			<td class ="instructionType"> integer </td>
-			<td class ="instructionRangeBounds"> 0 2 </td>
-			<td class ="instructionRangeClipmode"> both </td>
-			<td class ="instructionRampDrive"> none </td>
-			<td class ="instructionRampFunction"> none </td>
-			<td class ="instructionDataspace"> none </td>
-			<td class ="instructionDataspaceUnitNative"> none </td>
-			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> mode of the randomiser, which determines how the randomly generated is applied to the current parameter value. 0: ABSOLUTE; 1: LINEAR SCALE: new.value = value + (random.value * maxdev), RELATIVE, LINEAR SCALE: 
-new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SCALE: new.value = value * power(maxdev, random.value). For the last mode the distribution is flat o logarithmic scale </td>
+			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts always as a multiplier of the output of the random number generator </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> send1-channel/random/round </td>
@@ -1702,26 +1650,13 @@ new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SC
 			<td class="instructionName"> send1-level/random/maxdev </td>
 			<td class ="instructionType"> decimal </td>
 			<td class ="instructionRangeBounds"> 0.000000 1.000000 </td>
-			<td class ="instructionRangeClipmode"> none </td>
+			<td class ="instructionRangeClipmode"> low </td>
 			<td class ="instructionRampDrive"> scheduler </td>
 			<td class ="instructionRampFunction"> linear </td>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts just as a multiplier of their output. </td>
-		<tr>
-		<tr>
-			<td class="instructionName"> send1-level/random/mode </td>
-			<td class ="instructionType"> integer </td>
-			<td class ="instructionRangeBounds"> 0 2 </td>
-			<td class ="instructionRangeClipmode"> both </td>
-			<td class ="instructionRampDrive"> none </td>
-			<td class ="instructionRampFunction"> none </td>
-			<td class ="instructionDataspace"> none </td>
-			<td class ="instructionDataspaceUnitNative"> none </td>
-			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> mode of the randomiser, which determines how the randomly generated is applied to the current parameter value. 0: ABSOLUTE; 1: LINEAR SCALE: new.value = value + (random.value * maxdev), RELATIVE, LINEAR SCALE: 
-new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SCALE: new.value = value * power(maxdev, random.value). For the last mode the distribution is flat o logarithmic scale </td>
+			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts always as a multiplier of the output of the random number generator </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> send1-level/random/round </td>
@@ -1955,26 +1890,13 @@ new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SC
 			<td class="instructionName"> send2-channel/random/maxdev </td>
 			<td class ="instructionType"> decimal </td>
 			<td class ="instructionRangeBounds"> 0.000000 1.000000 </td>
-			<td class ="instructionRangeClipmode"> none </td>
+			<td class ="instructionRangeClipmode"> low </td>
 			<td class ="instructionRampDrive"> scheduler </td>
 			<td class ="instructionRampFunction"> linear </td>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts just as a multiplier of their output. </td>
-		<tr>
-		<tr>
-			<td class="instructionName"> send2-channel/random/mode </td>
-			<td class ="instructionType"> integer </td>
-			<td class ="instructionRangeBounds"> 0 2 </td>
-			<td class ="instructionRangeClipmode"> both </td>
-			<td class ="instructionRampDrive"> none </td>
-			<td class ="instructionRampFunction"> none </td>
-			<td class ="instructionDataspace"> none </td>
-			<td class ="instructionDataspaceUnitNative"> none </td>
-			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> mode of the randomiser, which determines how the randomly generated is applied to the current parameter value. 0: ABSOLUTE; 1: LINEAR SCALE: new.value = value + (random.value * maxdev), RELATIVE, LINEAR SCALE: 
-new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SCALE: new.value = value * power(maxdev, random.value). For the last mode the distribution is flat o logarithmic scale </td>
+			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts always as a multiplier of the output of the random number generator </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> send2-channel/random/round </td>
@@ -2208,26 +2130,13 @@ new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SC
 			<td class="instructionName"> send2-level/random/maxdev </td>
 			<td class ="instructionType"> decimal </td>
 			<td class ="instructionRangeBounds"> 0.000000 1.000000 </td>
-			<td class ="instructionRangeClipmode"> none </td>
+			<td class ="instructionRangeClipmode"> low </td>
 			<td class ="instructionRampDrive"> scheduler </td>
 			<td class ="instructionRampFunction"> linear </td>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts just as a multiplier of their output. </td>
-		<tr>
-		<tr>
-			<td class="instructionName"> send2-level/random/mode </td>
-			<td class ="instructionType"> integer </td>
-			<td class ="instructionRangeBounds"> 0 2 </td>
-			<td class ="instructionRangeClipmode"> both </td>
-			<td class ="instructionRampDrive"> none </td>
-			<td class ="instructionRampFunction"> none </td>
-			<td class ="instructionDataspace"> none </td>
-			<td class ="instructionDataspaceUnitNative"> none </td>
-			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> mode of the randomiser, which determines how the randomly generated is applied to the current parameter value. 0: ABSOLUTE; 1: LINEAR SCALE: new.value = value + (random.value * maxdev), RELATIVE, LINEAR SCALE: 
-new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SCALE: new.value = value * power(maxdev, random.value). For the last mode the distribution is flat o logarithmic scale </td>
+			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts always as a multiplier of the output of the random number generator </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> send2-level/random/round </td>
@@ -2461,26 +2370,13 @@ new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SC
 			<td class="instructionName"> source/random/maxdev </td>
 			<td class ="instructionType"> decimal </td>
 			<td class ="instructionRangeBounds"> 0.000000 1.000000 </td>
-			<td class ="instructionRangeClipmode"> none </td>
+			<td class ="instructionRangeClipmode"> low </td>
 			<td class ="instructionRampDrive"> scheduler </td>
 			<td class ="instructionRampFunction"> linear </td>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts just as a multiplier of their output. </td>
-		<tr>
-		<tr>
-			<td class="instructionName"> source/random/mode </td>
-			<td class ="instructionType"> integer </td>
-			<td class ="instructionRangeBounds"> 0 2 </td>
-			<td class ="instructionRangeClipmode"> both </td>
-			<td class ="instructionRampDrive"> none </td>
-			<td class ="instructionRampFunction"> none </td>
-			<td class ="instructionDataspace"> none </td>
-			<td class ="instructionDataspaceUnitNative"> none </td>
-			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> mode of the randomiser, which determines how the randomly generated is applied to the current parameter value. 0: ABSOLUTE; 1: LINEAR SCALE: new.value = value + (random.value * maxdev), RELATIVE, LINEAR SCALE: 
-new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SCALE: new.value = value * power(maxdev, random.value). For the last mode the distribution is flat o logarithmic scale </td>
+			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts always as a multiplier of the output of the random number generator </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> source/random/round </td>
@@ -2726,26 +2622,13 @@ new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SC
 			<td class="instructionName"> stereo-out/random/maxdev </td>
 			<td class ="instructionType"> decimal </td>
 			<td class ="instructionRangeBounds"> 0.000000 1.000000 </td>
-			<td class ="instructionRangeClipmode"> none </td>
+			<td class ="instructionRangeClipmode"> low </td>
 			<td class ="instructionRampDrive"> scheduler </td>
 			<td class ="instructionRampFunction"> linear </td>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts just as a multiplier of their output. </td>
-		<tr>
-		<tr>
-			<td class="instructionName"> stereo-out/random/mode </td>
-			<td class ="instructionType"> integer </td>
-			<td class ="instructionRangeBounds"> 0 2 </td>
-			<td class ="instructionRangeClipmode"> both </td>
-			<td class ="instructionRampDrive"> none </td>
-			<td class ="instructionRampFunction"> none </td>
-			<td class ="instructionDataspace"> none </td>
-			<td class ="instructionDataspaceUnitNative"> none </td>
-			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> mode of the randomiser, which determines how the randomly generated is applied to the current parameter value. 0: ABSOLUTE; 1: LINEAR SCALE: new.value = value + (random.value * maxdev), RELATIVE, LINEAR SCALE: 
-new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SCALE: new.value = value * power(maxdev, random.value). For the last mode the distribution is flat o logarithmic scale </td>
+			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts always as a multiplier of the output of the random number generator </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> stereo-out/random/round </td>
@@ -3003,26 +2886,13 @@ new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SC
 			<td class="instructionName"> transposition/random/maxdev </td>
 			<td class ="instructionType"> decimal </td>
 			<td class ="instructionRangeBounds"> 0.000000 1.000000 </td>
-			<td class ="instructionRangeClipmode"> none </td>
+			<td class ="instructionRangeClipmode"> low </td>
 			<td class ="instructionRampDrive"> scheduler </td>
 			<td class ="instructionRampFunction"> linear </td>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts just as a multiplier of their output. </td>
-		<tr>
-		<tr>
-			<td class="instructionName"> transposition/random/mode </td>
-			<td class ="instructionType"> integer </td>
-			<td class ="instructionRangeBounds"> 0 2 </td>
-			<td class ="instructionRangeClipmode"> both </td>
-			<td class ="instructionRampDrive"> none </td>
-			<td class ="instructionRampFunction"> none </td>
-			<td class ="instructionDataspace"> none </td>
-			<td class ="instructionDataspaceUnitNative"> none </td>
-			<td class ="instructionRepetitionsAllow"> 0 </td>
-			<td class ="instructionDescription"> mode of the randomiser, which determines how the randomly generated is applied to the current parameter value. 0: ABSOLUTE; 1: LINEAR SCALE: new.value = value + (random.value * maxdev), RELATIVE, LINEAR SCALE: 
-new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SCALE: new.value = value * power(maxdev, random.value). For the last mode the distribution is flat o logarithmic scale </td>
+			<td class ="instructionDescription"> determines maximum deviation of the randomiser for the uniform and beta distributions. For these distributions if the maxdev parameter is set to a certain value, the range of the generated random values will be [-value, +value] (output of beta, which is usually within range [0,1] is first shifted and scaled to fit this range). An exception to this rule is the Delay control unit in which the range for the two distributions is [0, + value]. For the remaining distribution the maxdev parameter acts always as a multiplier of the output of the random number generator </td>
 		<tr>
 		<tr>
 			<td class="instructionName"> transposition/random/round </td>
@@ -3177,7 +3047,7 @@ new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SC
 			<td class ="instructionRampFunction"> none </td>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
-			<td class ="instructionRepetitionsAllow"> 0 </td>
+			<td class ="instructionRepetitionsAllow"> 1 </td>
 			<td class ="instructionDescription"> array specifying timing (in milliseconds) of successive triggers in the sequence. The values are absolute in relation to the beginning of the sequence. Therefore a sequence of four consecutive triggers happening at an interval of 10 milliseconds form one another could be define as: 0 10 20 30 [ms] </td>
 		<tr>
 		<tr>
@@ -3189,7 +3059,7 @@ new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SC
 			<td class ="instructionRampFunction"> none </td>
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
-			<td class ="instructionRepetitionsAllow"> 0 </td>
+			<td class ="instructionRepetitionsAllow"> 1 </td>
 			<td class ="instructionDescription"> array specifying how many grains are scheduled per trigger even in the sequence. So if the trigger/play/timeSeq was set to: 0 10 15 30, and the triggerSeq to: 1 3 0 2, then at time 0: one grain would be scheduled, at 10 ms: three grains, at 15 ms: no grain would be triggered, and at 30 ms: two grains would be triggered </td>
 		<tr>
 		<tr>
@@ -4571,7 +4441,7 @@ new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SC
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 1 </td>
-			<td class ="instructionEnable"> 1 </td>
+			<td class ="instructionEnable"> 0 </td>
 			<td class ="instructionDescription"> returns 1 on each trigger just before the control units are traversed. This can be used to trigger operations, which can alter parameters of control units just before the grain parameters are generated. The return/before parameter toggles this return on/off </td>
 		<tr>
 		<tr>
@@ -4584,7 +4454,7 @@ new.value = value + (value * random.value * maxdev); 2: RELATIVE, LOGARITHMIC SC
 			<td class ="instructionDataspace"> none </td>
 			<td class ="instructionDataspaceUnitNative"> none </td>
 			<td class ="instructionRepetitionsAllow"> 1 </td>
-			<td class ="instructionEnable"> 1 </td>
+			<td class ="instructionEnable"> 0 </td>
 			<td class ="instructionDescription"> returns 1 on each trigger just after the grain parameters generated in the control units are stored in the grain parameter vector, but before the trigger is sent out of the module. This can be used to trigger other modules which modify or store the grain parameter vector just before the grain is triggered. The return/now parameter toggles this return on/off </td>
 		<tr>
 	</table>

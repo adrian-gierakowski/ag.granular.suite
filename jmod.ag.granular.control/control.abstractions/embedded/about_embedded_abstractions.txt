@@ -1,0 +1,1 @@
+The abstractions in this folder are used within the control module as embedded bpatchers in order to share the FTM namespace with it. 
