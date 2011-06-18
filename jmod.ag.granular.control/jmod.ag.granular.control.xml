@@ -265,6 +265,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='2' name='fast_to_slow_seq'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -332,6 +333,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -523,6 +525,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='3' name='fast_to_slow_seq_2'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -590,6 +593,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -781,6 +785,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='4' name='fast_to_slow_seq_3_loop'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -848,6 +853,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -1039,6 +1045,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='5' name='belsl_vox'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -1106,6 +1113,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -1297,6 +1305,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='6' name='bell_vox2'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -1364,6 +1373,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -1555,6 +1565,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='7' name='bell_vox2_no_attack'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -1622,6 +1633,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -1813,6 +1825,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='8' name='bells_vex_no_attack_triad'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -1880,6 +1893,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -2071,6 +2085,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='9' name='bells_vox_no_attack_traid2'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -2138,6 +2153,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -2396,6 +2412,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -2654,6 +2671,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -2912,6 +2930,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -3170,6 +3189,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -3428,6 +3448,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -3686,6 +3707,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -3944,6 +3966,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -4202,6 +4225,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -4460,6 +4484,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -4718,6 +4743,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -4976,6 +5002,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -5234,6 +5261,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -5492,6 +5520,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -5750,6 +5779,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
@@ -6008,6 +6038,7 @@
     <item name='length/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
+    <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
     <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
