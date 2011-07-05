@@ -2345,6 +2345,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='10' name='bells_vox_no_attack_trad_disturbed'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -2604,6 +2605,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='11' name='congas'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -2863,6 +2865,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='12' name='metalurgia'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -3122,6 +3125,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='13' name='preset6_mod'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -3381,6 +3385,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='14' name='preset7_mod'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -3640,6 +3645,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='15' name='preset10_mod'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -3899,6 +3905,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='16' name='preset11_mod'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -4158,6 +4165,7 @@
     <item name='view/size' type='array' priority='0'>300.000000 70.000000 </item>
   </preset>
   <preset number='17' name='scan_voice+drum'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -4417,6 +4425,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='18' name='scan_voice+drum_notrans'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -4676,6 +4685,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='19' name='scan_voice+drum_1ms'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -4935,6 +4945,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='20' name='1ms_+24_trans_scanscpeed=0'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -5194,6 +5205,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='21' name='speedy_loop'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -5453,6 +5465,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='22' name='speedy_loop_slower'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -5712,6 +5725,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='23' name='speedy_loop_faster'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -5971,6 +5985,7 @@
     <item name='view/size' type='array' priority='0'>300.000000 70.000000 </item>
   </preset>
   <preset number='24' name='speedy_loop_slow'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -6230,6 +6245,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='25' name='drum_burst_extern_trigger'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
@@ -6499,6 +6515,7 @@
     <item name='view/size' type='array' priority='0'>300 70 </item>
   </preset>
   <preset number='26' name='harpsi_burst_extern_trigger'>
+	<item name='audio/mute' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='delay/list/cyclic/direction' type='string' priority='1' mixweight='1'>up</item>
     <item name='delay/list/cyclic/resetonpresetload' type='boolean' priority='1' mixweight='1'>0</item>
