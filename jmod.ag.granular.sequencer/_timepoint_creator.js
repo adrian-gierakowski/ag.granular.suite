@@ -140,6 +140,8 @@ function _create_timepoint( x, y, ticks ) {
     
     box = patcher.newdefault( x, y, "timepoint");
     box.time( ticks );
+    patcher.connect( box, 0, patcher.getnamed( "timepoint-funnel" ), 0 );
+    
     //messnamed( box, "time", ticks );
     
     // add the box to the presentation
