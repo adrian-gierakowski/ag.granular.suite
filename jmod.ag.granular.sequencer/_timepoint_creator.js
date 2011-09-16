@@ -2,7 +2,8 @@
 
 
 // number of outlets
-var outlets    = 1;
+var inlets  = 2;
+var outlets = 0;
 
 // outlet that outputs bang when the some timepoint bangs
 var OUT_CUE = 0;
@@ -16,7 +17,7 @@ var LINE_SPACE = 20;
 
 // define initial Y position for first toggle line
 var TOP_MARGIN = 500;
-var LEFT_MARGIN = 300;
+var LEFT_MARGIN = 60;
 
 /** properties **/
 
@@ -117,14 +118,17 @@ function draw() {
     var x;
     var y;
     var timepoint;
-
+	var is_last;
+	
     for( i = 0; i < IN_num_points; i ++ ) {
 
 		x = LEFT_MARGIN;
         y = i * LINE_SPACE;
         y = y + TOP_MARGIN;
 
-        timepoint = _create_timepoint( x, y, i * IN_ticks_per_event );
+		is_last = ( i == IN_num_points - 1 ); 
+		
+        timepoint = _create_timepoint( x, y, i * IN_ticks_per_event,is_last );
 
         timepoints.push( timepoint );
         
@@ -132,7 +136,7 @@ function draw() {
     
 }
 
-function _create_timepoint( x, y, ticks ) {
+function _create_timepoint( x, y, ticks, is_last ) {
 
 	if( DEBUG ) _post_debug( "_create_timepoint " + x + ',' + y + ',' + ticks );
 
@@ -140,7 +144,12 @@ function _create_timepoint( x, y, ticks ) {
     
     box = patcher.newdefault( x, y, "timepoint");
     box.time( ticks );
-    patcher.connect( box, 0, patcher.getnamed( "timepoint-funnel" ), 0 );
+    
+    if( !is_last ) {
+    	patcher.connect( box, 0, patcher.getnamed( "timepoint-funnel" ), 0 );
+    } else {
+    	patcher.connect( box, 0, patcher.getnamed( "lastbang" ), 0 );
+    }
     
     //messnamed( box, "time", ticks );
     
