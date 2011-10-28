@@ -1,3 +1,24 @@
+/**
+
+    
+    TODO: REDRAW should update the timepoints instead of deleting and recreating them
+        -> on_tick_length_change
+        -> set_size
+
+
+**/
+
+
+
+
+
+
+
+
+
+
+
+
 /** constants **/
 
 var DEBUG      = true;
@@ -21,7 +42,7 @@ var OUT_CUE = 0;
 /** properties **/
 
 // array to store the list of timepoint objects
-var timepoints;
+var timepoints = [];
 
 
 // number of events pear bar
@@ -43,6 +64,9 @@ line_length   = 30;
 
 function _post_debug( name ) { 
 	
+    if( !DEBUG ) return;
+
+    post( "\n" );
 	post( "debug: " + name );
 		
 }
@@ -79,19 +103,29 @@ function save() {
 }
 
 function dump_info() {
-	
-	if( DEBUG ) _post_debug( "dump_info" );
     
-	// POST SOME STUFF TO MAX WINDOW HERE
+    if( DEBUG ) _post_debug( "dump_info" );
+    
+    // POST SOME STUFF TO MAX WINDOW HERE
+    
+}
+
+function bang() {
+    
+    if( DEBUG ) _post_debug( "LAST BANG TRIGGERED" );
+    
+    dump_info();
+
+    // POST SOME STUFF TO MAX WINDOW HERE
     
 }
 
 function set_size( value ) {
 
-	if( DEBUG ) _post_debug( "set_size" );
+	if( DEBUG ) _post_debug( "set_size to " + value );
 	
     // steps cant be less than 1
-    IN_num_points = Math.max( 0, value );
+    IN_num_points = Math.max( 1, value );
 
     redraw();
 
@@ -108,7 +142,7 @@ function set_event_tick_length( length ) {
  */
 function redraw() {
 
-	if( DEBUG ) _post_debug( "redraw" );
+	_post_debug( "redraw" );
 	
     clear();
 
@@ -117,15 +151,18 @@ function redraw() {
 
 function draw() {
     
-    if( DEBUG ) _post_debug( "draw" );
+    _post_debug( "draw" );
     	
     var i;
     var x;
     var y;
+    var time;
     var timepoint;
 	var is_last;
 	
-    for( i = 0; i < IN_num_points; i ++ ) {
+    // we don't draw the first one.
+    // the first event is triggered by the metronome
+    for( i = 1; i < IN_num_points; i ++ ) {
 
 		x = LEFT_MARGIN;
         y = i * LINE_SPACE;
@@ -133,9 +170,11 @@ function draw() {
 
 		is_last = ( i == IN_num_points - 1 ); 
 		
-        timepoint = _create_timepoint( x, y, i * IN_ticks_per_event,is_last );
+        time = i * IN_ticks_per_event;
 
-        timepoints.push( timepoint );
+        timepoint = _create_timepoint( x, y, time, is_last );
+
+        save_timepoint( timepoint, time );
         
     }
     
@@ -143,25 +182,58 @@ function draw() {
 
 function _create_timepoint( x, y, ticks, is_last ) {
 
-	if( DEBUG ) _post_debug( "_create_timepoint " + x + ',' + y + ',' + ticks + "\n");
+	
+    _post_debug( "_create_timepoint " + x + ',' + y + ',' + ticks );
+     
 
     var box;
     
     box = patcher.newdefault( x, y, "timepoint" );
     box.time( ticks );
     
-    if( !is_last ) {
-    	patcher.connect( box, 0, patcher.getnamed( "timepoint-funnel" ), 0 );
-    } else {
-    	patcher.connect( box, 0, patcher.getnamed( "lastbang" ), 0 );
-    }
-    
+
+    /**
+
+        We don't need anymore to know which timepoint is the last one
+
+        if( !is_last ) {
+        	patcher.connect( box, 0, patcher.getnamed( "timepoint-funnel" ), 0 );
+        } else {
+        	patcher.connect( box, 0, patcher.getnamed( "lastbang" ), 0 );
+        }
+
+    **/
+
+    patcher.connect( box, 0, patcher.getnamed( "timepoint-funnel" ), 0 );
+
     //messnamed( box, "time", ticks );
     
     // add the box to the presentation
     // box.presentation( 1 );
     
     return box; 
+    
+}
+
+function add_offset( offset ) {
+    
+    _post_debug( "adding offset " + offset );
+        
+    var i;
+    var timepoint;
+    var time;
+
+    _post_debug( 'number of created time points ' + timepoints.length )
+    
+    // we don't draw the first one.
+    // the first event is triggered by the metronome
+    for( i = 0; i < timepoints.length; i ++ ) {
+        
+        offset_time( i, offset );
+
+        _post_debug( 'timepoint has time' + get_time( i ) )
+        
+    }
     
 }
 
@@ -177,9 +249,9 @@ function clear() {
 
     for( i = 0; i < timepoints.length; i++ ) {
 
-        timepoint = timepoints[ i ];
+        timepoint = get_timepoint( i );
 
-        if( timepoints[ i ] == null ) continue;
+        if( !has_timepoint( i ) ) continue;
 
         if( timepoint.maxclass != 'timepoint' ) continue;
 
@@ -188,5 +260,61 @@ function clear() {
     }
 
     timepoints = [];
+
+}
+
+//*** getters/setters
+
+function save_timepoint( timepoint, time ) {
+    
+    timepoints.push( { 
+        original_time : time,
+        time          : time,
+        timepoint     : timepoint
+    } );
+
+}
+
+function get_timepoint( id ) {
+    
+    return timepoints[ id ].timepoint;
+
+}
+
+function has_timepoint( id ) {
+    
+    return timepoints[ id ] != null;
+
+}
+
+function get_original_time( id ) {
+    
+    return timepoints[ id ].original_time;
+
+}
+
+function get_time( id ) {
+    
+    return timepoints[ id ].time;
+
+}
+
+function set_time( id, time ) {
+    
+    // set the new time to the timepoint
+    get_timepoint( id ).time( time );
+    
+    return timepoints[ id ].time = time;
+
+}
+
+//*** getters/setters auxiliary functions
+
+
+function offset_time( id, time ) {
+    
+    time = time + get_original_time( id );
+
+    set_time( id, time );
 
 }
