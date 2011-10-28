@@ -1,4 +1,14 @@
+/** constants **/
+
+var DEBUG      = true;
+
 /** outlets **/
+// space between toggle lines
+var LINE_SPACE = 20;
+
+// define initial Y position for first toggle line
+var TOP_MARGIN = 500;
+var LEFT_MARGIN = 60;
 
 
 // number of outlets
@@ -8,24 +18,16 @@ var outlets = 0;
 // outlet that outputs bang when the some timepoint bangs
 var OUT_CUE = 0;
 
-/** constants **/
-
-var DEBUG      = true;
-
-// space between toggle lines
-var LINE_SPACE = 20;
-
-// define initial Y position for first toggle line
-var TOP_MARGIN = 500;
-var LEFT_MARGIN = 60;
-
 /** properties **/
 
 // array to store the list of timepoint objects
 var timepoints;
 
-// number to store the number of timepoints in the patch
+
+// number of events pear bar
 var IN_num_points;
+
+// length of the events in Ticks
 var IN_ticks_per_event;
 
 // horizontal distance from one timepoint to another
@@ -36,9 +38,6 @@ var line_length;
 
 timepoints    = [];
 line_length   = 30;
-
-// JUST A START VALUE TO DEBUG SCRIPT
-IN_ticks_per_event = 120;
 
 /** methods **/
 
@@ -98,6 +97,12 @@ function set_size( value ) {
 
 }
 
+function set_event_tick_length( length ) {
+    
+    IN_ticks_per_event = length
+
+}
+
 /**
  * Save values, Clear than draw
  */
@@ -138,11 +143,11 @@ function draw() {
 
 function _create_timepoint( x, y, ticks, is_last ) {
 
-	if( DEBUG ) _post_debug( "_create_timepoint " + x + ',' + y + ',' + ticks );
+	if( DEBUG ) _post_debug( "_create_timepoint " + x + ',' + y + ',' + ticks + "\n");
 
     var box;
     
-    box = patcher.newdefault( x, y, "timepoint");
+    box = patcher.newdefault( x, y, "timepoint" );
     box.time( ticks );
     
     if( !is_last ) {
