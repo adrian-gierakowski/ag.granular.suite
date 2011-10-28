@@ -28,7 +28,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 660.0, 450.0, 89.0, 20.0 ],
-					"presentation_rect" : [ 771.0, 391.0, 0.0, 0.0 ],
 					"text" : "r #0-multislider"
 				}
 
@@ -38,7 +37,7 @@
 					"args" : [  ],
 					"id" : "obj-49",
 					"maxclass" : "bpatcher",
-					"name" : "__step_seq.maxpat",
+					"name" : "_multislider.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 660.0, 480.0, 523.0, 170.0 ]
@@ -202,13 +201,13 @@
 ,
 					"patching_rect" : [ 180.0, 345.0, 86.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"fontsize" : 12.0,
-						"default_fontface" : 0,
 						"default_fontname" : "Arial",
+						"globalpatchername" : "",
 						"fontname" : "Arial",
 						"default_fontsize" : 12.0,
-						"globalpatchername" : "",
-						"fontface" : 0
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"default_fontface" : 0
 					}
 ,
 					"text" : "p update_stuff"
@@ -1497,15 +1496,6 @@
 					"hidden" : 0,
 					"midpoints" : [  ],
 					"source" : [ "obj-51", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-49", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ],
-					"source" : [ "obj-54", 0 ]
 				}
 
 			}
