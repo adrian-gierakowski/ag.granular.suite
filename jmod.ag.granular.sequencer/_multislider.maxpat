@@ -1,7 +1,7 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 765.0, 420.0, 523.0, 170.0 ],
+		"rect" : [ 660.0, 480.0, 523.0, 170.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"defrect" : [ 624.0, 397.0, 1119.0, 576.0 ],
@@ -42,7 +42,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 120.0, 285.0, 47.0, 18.0 ],
-					"presentation_rect" : [ 116.0, 291.0, 0.0, 0.0 ],
 					"text" : "size $1"
 				}
 
@@ -437,6 +436,7 @@
 					"candicane6" : [ 0.733333, 0.035294, 0.788235, 1.0 ],
 					"candicane7" : [ 0.878431, 0.243137, 0.145098, 1.0 ],
 					"candicane8" : [ 0.027451, 0.447059, 0.501961, 1.0 ],
+					"candycane" : 23,
 					"contdata" : 1,
 					"ghostbar" : 17,
 					"id" : "obj-28",
@@ -449,7 +449,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 15.0, 484.0, 134.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
-					"size" : 16,
+					"size" : 28,
 					"slidercolor" : [ 0.815686, 0.176471, 0.176471, 1.0 ],
 					"thickness" : 10
 				}
