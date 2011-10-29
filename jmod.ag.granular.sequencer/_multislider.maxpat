@@ -1,10 +1,10 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 660.0, 480.0, 523.0, 170.0 ],
+		"rect" : [ 330.0, 195.0, 523.0, 170.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 624.0, 397.0, 1119.0, 576.0 ],
+		"defrect" : [ 499.0, 371.0, 1119.0, 576.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -20,6 +20,17 @@
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-21",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 855.0, 345.0, 25.0, 25.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -363,19 +374,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-19",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 855.0, 303.0, 213.0, 20.0 ],
-					"text" : "s #0multislider.form.current_volume"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-15",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -409,7 +407,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 855.0, 273.0, 60.0, 18.0 ],
-					"text" : "0.704545"
+					"text" : "0.439394"
 				}
 
 			}
@@ -449,7 +447,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 15.0, 484.0, 134.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
-					"size" : 28,
+					"size" : 25,
 					"slidercolor" : [ 0.815686, 0.176471, 0.176471, 1.0 ],
 					"thickness" : 10
 				}
@@ -665,7 +663,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
+					"destination" : [ "obj-21", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ],
 					"source" : [ "obj-61", 0 ]
