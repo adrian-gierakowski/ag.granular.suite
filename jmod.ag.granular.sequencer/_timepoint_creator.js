@@ -28,8 +28,8 @@ var DEBUG      = true;
 var LINE_SPACE = 20;
 
 // define initial Y position for first toggle line
-var TOP_MARGIN = 700;
-var LEFT_MARGIN = 60;
+var TOP_MARGIN = 90;
+var LEFT_MARGIN = 45;
 
 
 // number of outlets
