@@ -1,10 +1,16 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 212.0, 106.0, 945.0, 731.0 ],
+		"appversion" : 		{
+			"major" : 5,
+			"minor" : 1,
+			"revision" : 9
+		}
+,
+		"rect" : [ 225.0, 100.0, 945.0, 731.0 ],
 		"bgcolor" : [ 0.360784, 0.360784, 0.360784, 1.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 212.0, 106.0, 945.0, 731.0 ],
+		"defrect" : [ 225.0, 100.0, 945.0, 731.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -197,6 +203,12 @@
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 5,
+							"minor" : 1,
+							"revision" : 9
+						}
+,
 						"rect" : [ 215.0, 68.0, 1014.0, 607.0 ],
 						"bglocked" : 0,
 						"defrect" : [ 215.0, 68.0, 1014.0, 607.0 ],
@@ -1079,13 +1091,13 @@
 ,
 					"patching_rect" : [ 640.0, 283.0, 63.0, 19.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
 						"default_fontsize" : 10.0,
+						"fontname" : "Verdana",
+						"default_fontface" : 0,
 						"globalpatchername" : "",
+						"default_fontname" : "Verdana",
 						"fontface" : 0,
-						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"fontsize" : 10.0
 					}
 ,
 					"text" : "p louncher"
@@ -1104,6 +1116,12 @@
 					"outlettype" : [ "audio.connect" ],
 					"patcher" : 					{
 						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 5,
+							"minor" : 1,
+							"revision" : 9
+						}
+,
 						"rect" : [ 59.0, 64.0, 1273.0, 636.0 ],
 						"bglocked" : 0,
 						"defrect" : [ 59.0, 64.0, 1273.0, 636.0 ],
@@ -1234,6 +1252,7 @@
 								"box" : 								{
 									"fontname" : "Verdana",
 									"fontsize" : 14.0,
+									"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"id" : "obj-9",
 									"linecount" : 3,
 									"maxclass" : "comment",
@@ -1656,13 +1675,13 @@
 ,
 					"patching_rect" : [ 300.0, 577.0, 47.0, 26.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
 						"default_fontsize" : 10.0,
+						"fontname" : "Verdana",
+						"default_fontface" : 0,
 						"globalpatchername" : "",
+						"default_fontname" : "Verdana",
 						"fontface" : 0,
-						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"fontsize" : 10.0
 					}
 ,
 					"text" : "p FX"
@@ -1691,6 +1710,12 @@
 					"outlettype" : [ "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 5,
+							"minor" : 1,
+							"revision" : 9
+						}
+,
 						"rect" : [ 358.0, 294.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"defrect" : [ 358.0, 294.0, 640.0, 480.0 ],
@@ -1836,13 +1861,13 @@
 ,
 					"patching_rect" : [ 330.0, 350.0, 99.0, 19.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
 						"default_fontsize" : 10.0,
+						"fontname" : "Verdana",
+						"default_fontface" : 0,
 						"globalpatchername" : "",
+						"default_fontname" : "Verdana",
 						"fontface" : 0,
-						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"fontsize" : 10.0
 					}
 ,
 					"text" : "p autoload_saved"
@@ -2146,7 +2171,7 @@
 					"id" : "obj-5",
 					"maxclass" : "bpatcher",
 					"name" : "jmod.ag.granular.engine~.maxpat",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "samplesSizeChanged", "audio.connect" ],
 					"patching_rect" : [ 19.0, 493.0, 300.0, 70.0 ],
@@ -2211,7 +2236,7 @@
 , 			{
 				"patchline" : 				{
 					"color" : [ 0.0, 0.858824, 1.0, 1.0 ],
-					"destination" : [ "obj-5", 1 ],
+					"destination" : [ "obj-5", 2 ],
 					"hidden" : 0,
 					"midpoints" : [  ],
 					"source" : [ "obj-2", 1 ]
@@ -2240,7 +2265,7 @@
 , 			{
 				"patchline" : 				{
 					"color" : [ 0.0, 0.858824, 1.0, 1.0 ],
-					"destination" : [ "obj-5", 1 ],
+					"destination" : [ "obj-5", 2 ],
 					"hidden" : 0,
 					"midpoints" : [ 649.5, 483.0, 309.5, 483.0 ],
 					"source" : [ "obj-21", 0 ]
@@ -2395,7 +2420,7 @@
 , 			{
 				"patchline" : 				{
 					"color" : [ 0.0, 0.858824, 1.0, 1.0 ],
-					"destination" : [ "obj-5", 1 ],
+					"destination" : [ "obj-5", 2 ],
 					"hidden" : 0,
 					"midpoints" : [ 335.5, 483.5, 309.5, 483.5 ],
 					"source" : [ "obj-73", 0 ]
