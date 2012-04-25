@@ -545,7 +545,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1089.0, 153.0, 598.0, 43.0 ],
-					"text" : "jcom.message record/record @type boolean @range/clipmode both @range/bounds 0 1 @repetitions/allow 0 @ramp/drive none @priority 1 @description \"1: start recording the sequence from current position (if syncStart on, recording will synchronously to the first incoming event), 0: stop recording (resets recording position to 0)\"",
+					"text" : "jcom.message record/record @type boolean @range/clipmode both @range/bounds 0 1 @repetitions/allow 0 @ramp/drive none @description \"1: start recording the sequence from current position (if syncStart on, recording will synchronously to the first incoming event), 0: stop recording (resets recording position to 0)\"",
 					"varname" : "hue_angle[1]"
 				}
 

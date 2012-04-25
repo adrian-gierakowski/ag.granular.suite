@@ -8603,7 +8603,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 21.0, 650.0, 589.0, 31.0 ],
-									"text" : "jcom.message ola/clear @type none @range/clipmode none @priority 0 @repetitions/allow 1 @description \"clears gbr.ola~ buffer removing all currently playing grains from the audio stream\""
+									"text" : "jcom.message ola/clear @type none @range/clipmode none @repetitions/allow 1 @description \"clears gbr.ola~ buffer removing all currently playing grains from the audio stream\""
 								}
 
 							}

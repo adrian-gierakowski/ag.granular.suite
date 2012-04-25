@@ -478,7 +478,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1655.0, 290.0, 588.0, 55.0 ],
-					"text" : "jcom.message play/play @type boolean @range/clipmode both @range/bounds 0 1 @repetitions/allow 0 @ramp/drive none @priority 1 @description \"1: play the sequence from current playback position until the end of loop (segment) and stop (f the sequence is currently playing in loop mode, you can use this message to stop the playback when the end of current segment is reached), 0: stop playback\"",
+					"text" : "jcom.message play/play @type boolean @range/clipmode both @range/bounds 0 1 @repetitions/allow 0 @ramp/drive none @description \"1: play the sequence from current playback position until the end of loop (segment) and stop (f the sequence is currently playing in loop mode, you can use this message to stop the playback when the end of current segment is reached), 0: stop playback\"",
 					"varname" : "hue_angle[1]"
 				}
 
