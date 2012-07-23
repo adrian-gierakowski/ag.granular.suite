@@ -1,6 +1,12 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 5,
+			"minor" : 1,
+			"revision" : 9
+		}
+,
 		"rect" : [ 0.0, 44.0, 1440.0, 826.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
@@ -95,6 +101,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-86",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -137,6 +144,7 @@
 , 			{
 				"box" : 				{
 					"align" : 1,
+					"annotation" : "set recording mode. 0: clear, clears whole sequence when recording starts, 1: erase, erases the content of the sequence as recording progresses, 2: overdub, adds newly recorded events to the sequence, leaving existing events untouched",
 					"fontname" : "Verdana",
 					"fontsize" : 9.0,
 					"framecolor" : [ 0.360784, 0.360784, 0.360784, 1.0 ],
@@ -160,6 +168,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-81",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -174,6 +183,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-79",
 					"linecount" : 3,
 					"maxclass" : "comment",
@@ -189,6 +199,7 @@
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 18.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-92",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -203,6 +214,7 @@
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 18.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-90",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -306,6 +318,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "pause recording ",
 					"bgcolor" : [ 0.827451, 0.827451, 0.827451, 1.0 ],
 					"bgoncolor" : [ 1.0, 0.501961, 0.0, 1.0 ],
 					"bgovercolor" : [ 1.0, 0.745098, 0.486275, 1.0 ],
@@ -734,6 +747,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "synchronise recording start to first incomming event.",
 					"bordercolor" : [ 0.360784, 0.360784, 0.360784, 1.0 ],
 					"hint" : "/syncStart",
 					"id" : "obj-43",
@@ -923,6 +937,12 @@
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 5,
+							"minor" : 1,
+							"revision" : 9
+						}
+,
 						"rect" : [ 473.0, 448.0, 907.0, 325.0 ],
 						"bglocked" : 0,
 						"defrect" : [ 473.0, 448.0, 907.0, 325.0 ],
@@ -947,10 +967,10 @@
 									"id" : "obj-108",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 4,
-									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 20.0, 43.0, 189.0, 19.0 ],
-									"text" : "route int float samplesSizeChanged"
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 20.0, 43.0, 245.0, 19.0 ],
+									"text" : "route int float samplesSizeChanged engineUID"
 								}
 
 							}
@@ -1002,7 +1022,7 @@
 									"destination" : [ "obj-5", 0 ],
 									"hidden" : 0,
 									"midpoints" : [  ],
-									"source" : [ "obj-108", 3 ]
+									"source" : [ "obj-108", 4 ]
 								}
 
 							}
@@ -1011,13 +1031,13 @@
 ,
 					"patching_rect" : [ 267.0, 44.0, 194.0, 28.0 ],
 					"saved_object_attributes" : 					{
-						"fontname" : "Verdana",
-						"default_fontname" : "Verdana",
-						"default_fontsize" : 10.0,
+						"globalpatchername" : "",
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"globalpatchername" : "",
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"default_fontsize" : 10.0,
+						"fontname" : "Verdana"
 					}
 ,
 					"text" : "p engine_data_sync"
@@ -1303,7 +1323,7 @@
 					"patching_rect" : [ 0.0, 0.0, 150.0, 70.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 150.0, 70.0 ],
-					"text" : "/editing_this_module.2"
+					"text" : "/editing_this_module"
 				}
 
 			}

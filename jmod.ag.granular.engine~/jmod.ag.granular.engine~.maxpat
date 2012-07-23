@@ -7,7 +7,7 @@
 			"revision" : 9
 		}
 ,
-		"rect" : [ 19.0, 493.0, 300.0, 70.0 ],
+		"rect" : [ 0.0, 44.0, 1440.0, 826.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"defrect" : [ 0.0, 44.0, 1440.0, 826.0 ],
@@ -757,8 +757,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1555.122925, 622.063416, 395.3125, 17.0 ],
-									"presentation_rect" : [ 1555.122925, 622.063416, 395.3125, 17.0 ],
+									"patching_rect" : [ 1555.122925, 622.063416, 393.128906, 17.0 ],
+									"presentation_rect" : [ 1555.122925, 622.063416, 393.128906, 17.0 ],
 									"text" : [ "_($samples.len.fvec[$source] *  (1 - $gr.params.fvec[2])) $gr.params.fvec[4]" ],
 									"textcolor" : [ 0.082353, 0.25098, 0.431373, 1.0 ]
 								}
@@ -998,8 +998,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1002.0, 387.888855, 395.3125, 17.0 ],
-									"presentation_rect" : [ 1002.0, 387.888855, 395.3125, 17.0 ],
+									"patching_rect" : [ 1002.0, 387.888855, 393.128906, 17.0 ],
+									"presentation_rect" : [ 1002.0, 387.888855, 393.128906, 17.0 ],
 									"text" : [ "_($samples.len.fvec[$source] *  (1 - $gr.params.fvec[2])) $gr.params.fvec[4]" ],
 									"textcolor" : [ 0.082353, 0.25098, 0.431373, 1.0 ]
 								}
@@ -6170,9 +6170,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 427.0, 746.0, 942.799011, 22.0 ],
-					"presentation_rect" : [ 427.0, 746.0, 942.799011, 22.0 ],
-					"text" : [ "_(getid $gr.params.fmat) (getid $samples.len.off.sel.fmat) (getid $samples) (getid $samples.paths) (getid $samples.len.off.sel.fmat)" ]
+					"patching_rect" : [ 427.0, 746.0, 1124.935913, 22.0 ],
+					"presentation_rect" : [ 427.0, 746.0, 1124.935913, 22.0 ],
+					"text" : [ "_(getid $gr.params.fmat) (getid $samples.len.off.sel.fmat) (getid $samples) (getid $samples.paths) (getid $samples.len.off.sel.fmat) (getid $shared.variables)" ]
 				}
 
 			}
@@ -6460,9 +6460,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 210.0, 690.0, 103.197258, 17.0 ],
-													"presentation_rect" : [ 210.0, 690.0, 103.197258, 17.0 ],
-													"text" : [ "_($samples.size - 1)" ]
+													"patching_rect" : [ 210.0, 690.0, 137.333023, 17.0 ],
+													"presentation_rect" : [ 210.0, 690.0, 137.333023, 17.0 ],
+													"text" : [ "_($shared.variables[1] - 1)" ]
 												}
 
 											}
@@ -6962,9 +6962,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 589.0, 172.0, 217.072235, 18.0 ],
-													"presentation_rect" : [ 589.0, 172.0, 217.072235, 18.0 ],
-													"text" : [ "_($samples clear) ($samples.empty = 0);" ]
+													"patching_rect" : [ 589.0, 172.0, 237.767563, 18.0 ],
+													"presentation_rect" : [ 589.0, 172.0, 237.767563, 18.0 ],
+													"text" : [ "_($samples clear) ($shared.variables[0] = 0);" ]
 												}
 
 											}
@@ -6997,9 +6997,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 589.0, 149.0, 156.052734, 18.0 ],
-													"presentation_rect" : [ 589.0, 149.0, 156.052734, 18.0 ],
-													"text" : [ "_(if ($samples.empty == 1) 1)" ]
+													"patching_rect" : [ 589.0, 149.0, 176.748016, 18.0 ],
+													"presentation_rect" : [ 589.0, 149.0, 176.748016, 18.0 ],
+													"text" : [ "_(if ($shared.variables[0] == 1) 1)" ]
 												}
 
 											}
@@ -7022,7 +7022,7 @@
 													"patching_rect" : [ 575.0, 228.0, 486.0, 60.0 ],
 													"presentation_linecount" : 4,
 													"presentation_rect" : [ 575.0, 228.0, 486.0, 60.0 ],
-													"text" : [ "_($samples append (((new fmat) import $1) cols 1));", "_(($samples.paths append $1));", "_($samples.len.off.sel.fmat append ($sample.paths.and.data.load[1 0] getrow $load.count));", "_($samples.size = ($samples rows))" ]
+													"text" : [ "_($samples append (((new fmat) import $1) cols 1));", "_(($samples.paths append $1));", "_($samples.len.off.sel.fmat append ($sample.paths.and.data.load[1 0] getrow $load.count));", "_($shared.variables[1] = ($samples rows))" ]
 												}
 
 											}
@@ -7118,9 +7118,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 880.0, 367.0, 343.031342, 18.0 ],
-													"presentation_rect" : [ 880.0, 367.0, 343.031342, 18.0 ],
-													"text" : [ "_(if (($samples.empty == 1) || ($load.slot >= $samples.size)) 1 2)" ]
+													"patching_rect" : [ 880.0, 367.0, 363.726624, 18.0 ],
+													"presentation_rect" : [ 880.0, 367.0, 363.726624, 18.0 ],
+													"text" : [ "_(if (($shared.variables[0] == 1) || ($load.slot >= $samples.size)) 1 2)" ]
 												}
 
 											}
@@ -8382,9 +8382,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 476.0, 81.0, 323.103577, 18.0 ],
-													"presentation_rect" : [ 476.0, 81.0, 323.103577, 18.0 ],
-													"text" : [ "_(($samples rows 1) set 0 0 $dummy) ($samples.empty = 1);" ]
+													"patching_rect" : [ 476.0, 81.0, 343.798889, 18.0 ],
+													"presentation_rect" : [ 476.0, 81.0, 343.798889, 18.0 ],
+													"text" : [ "_(($samples rows 1) set 0 0 $dummy) ($shared.variables[0] = 1);" ]
 												}
 
 											}
@@ -8414,9 +8414,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 71.0, 120.0, 210.451141, 18.0 ],
-													"presentation_rect" : [ 71.0, 120.0, 210.451141, 18.0 ],
-													"text" : [ "_range/bounds 0 ($samples.size = 0), 0" ]
+													"patching_rect" : [ 71.0, 120.0, 242.484375, 18.0 ],
+													"presentation_rect" : [ 71.0, 120.0, 242.484375, 18.0 ],
+													"text" : [ "_range/bounds 0 ($shared.variables[1] = 0), 0" ]
 												}
 
 											}
@@ -8689,9 +8689,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 978.0, 899.0, 76.185539, 17.0 ],
-									"presentation_rect" : [ 978.0, 899.0, 76.185539, 17.0 ],
-									"text" : [ "_$samples.size" ]
+									"patching_rect" : [ 978.0, 899.0, 110.321281, 17.0 ],
+									"presentation_rect" : [ 978.0, 899.0, 110.321281, 17.0 ],
+									"text" : [ "_$shared.variables[1]" ]
 								}
 
 							}
@@ -9049,8 +9049,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 21.0, 650.0, 589.0, 31.0 ],
-									"text" : "jcom.message ola/clear @type none @range/clipmode none @priority 0 @repetitions/allow 1 @description \"clears gbr.ola~ buffer removing all currently playing grains from the audio stream\""
+									"patching_rect" : [ 21.0, 650.0, 575.0, 31.0 ],
+									"text" : "jcom.message ola/clear @type none @range/clipmode none @repetitions/allow 1 @description \"clears gbr.ola~ buffer removing all currently playing grains from the audio stream\""
 								}
 
 							}
@@ -9858,6 +9858,21 @@
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Verdana",
+									"fontsize" : 10.0,
+									"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"id" : "obj-32",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 671.0, 5.0, 241.0, 31.0 ],
+									"text" : "0: samples empty flag\n1: number of loaded samples\\sources"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"description" : "mat 0 1",
 									"editor_interface" : "matrix",
@@ -10720,23 +10735,23 @@
 							}
 , 							{
 								"box" : 								{
-									"description" : "var 0",
-									"editor_interface" : "",
+									"description" : "fmat 2 1 1 0",
+									"editor_interface" : "matrix",
 									"fontname" : "Verdana",
 									"fontsize" : 10.0,
 									"ftm_objref_conv" : 0,
 									"ftm_scope" : 0,
 									"id" : "obj-10",
 									"maxclass" : "ftm.object",
-									"name" : "samples.empty",
+									"name" : "shared.variables",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 129.0, 57.0, 125.402336, 18.0 ],
+									"patching_rect" : [ 494.0, 12.0, 171.183594, 18.0 ],
 									"persistence" : 0,
-									"presentation_rect" : [ 129.0, 57.0, 125.402336, 18.0 ],
+									"presentation_rect" : [ 494.0, 12.0, 171.183594, 18.0 ],
 									"scope" : 0,
-									"text" : "var 0"
+									"text" : "fmat 2 1 1 0"
 								}
 
 							}
@@ -11142,28 +11157,6 @@
 									"presentation_rect" : [ 13.0, 212.416672, 285.06543, 18.0 ],
 									"scope" : 0,
 									"text" : "fvec $samples.len.off.sel.fmat col 0"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"description" : "var 0",
-									"editor_interface" : "",
-									"fontname" : "Verdana",
-									"fontsize" : 10.0,
-									"ftm_objref_conv" : 0,
-									"ftm_scope" : 0,
-									"id" : "obj-46",
-									"maxclass" : "ftm.object",
-									"name" : "samples.size",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 13.0, 57.0, 112.785156, 18.0 ],
-									"persistence" : 0,
-									"presentation_rect" : [ 13.0, 57.0, 112.785156, 18.0 ],
-									"scope" : 0,
-									"text" : "var 0"
 								}
 
 							}
@@ -12479,7 +12472,7 @@
 									"hint" : "directory name of current sample",
 									"id" : "obj-20",
 									"ignoreclick" : 1,
-									"items" : [ "Macintosh HD:/Users/admin/samples/water_cuts", ",", "Macintosh HD:/Users/admin/samples/water_cuts", ",", "Macintosh HD:/Users/admin/samples/water_cuts", ",", "Macintosh HD:/Users/admin/samples/water_cuts", ",", "Macintosh HD:/Users/admin/samples/water_cuts", ",", "Macintosh HD:/Users/admin/samples/water_cuts", ",", "Macintosh HD:/Users/admin/samples/water_cuts", ",", "Macintosh HD:/Users/admin/samples/water_cuts", ",", "Macintosh HD:/Users/admin/samples/water_cuts", ",", "Macintosh HD:/Users/admin/samples/water_cuts", ",", "Macintosh HD:/Users/admin/samples/water_cuts" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -12568,7 +12561,7 @@
 									"fontsize" : 10.0,
 									"hint" : "/samples/selectSlot file names",
 									"id" : "obj-7",
-									"items" : [ "STE-023-13.wav", ",", "STE-023-23.wav", ",", "STE-023-7.wav", ",", "STE-023-9.wav", ",", "STE-023.wav", ",", "STE-023-15.wav", ",", "STE-023-13-old1.wav", ",", "noiss.wav", ",", "STE-023-3.wav", ",", "STE-023-1.wav", ",", "STE-022-3.wav" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -13549,8 +13542,7 @@
 									"patching_rect" : [ 739.0, 979.0, 101.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 519.0, 206.333344, 124.0, 18.0 ],
-									"rounded" : 0.0,
-									"text" : "0. 1."
+									"rounded" : 0.0
 								}
 
 							}
@@ -13622,7 +13614,6 @@
 									"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"hint" : "range selection min\\max (ms)",
 									"id" : "obj-56",
-									"linecount" : 2,
 									"maxclass" : "textedit",
 									"numinlets" : 1,
 									"numoutlets" : 4,
@@ -13630,8 +13621,7 @@
 									"patching_rect" : [ 619.0, 832.0, 101.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 338.0, 206.333344, 149.0, 18.0 ],
-									"rounded" : 0.0,
-									"text" : "0. 12037.483398"
+									"rounded" : 0.0
 								}
 
 							}
@@ -13951,9 +13941,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 644.0, 146.0, 166.060547, 18.0 ],
-													"presentation_rect" : [ 644.0, 146.0, 166.060547, 18.0 ],
-													"text" : [ "_(if ($samples.empty == 1) 1 2)" ]
+													"patching_rect" : [ 644.0, 146.0, 186.755844, 18.0 ],
+													"presentation_rect" : [ 644.0, 146.0, 186.755844, 18.0 ],
+													"text" : [ "_(if ($shared.variables[0] == 1) 1 2)" ]
 												}
 
 											}
@@ -13972,9 +13962,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 208.0, 183.0, 217.072235, 18.0 ],
-													"presentation_rect" : [ 208.0, 183.0, 217.072235, 18.0 ],
-													"text" : [ "_($samples clear) ($samples.empty = 0);" ]
+													"patching_rect" : [ 208.0, 183.0, 237.767563, 18.0 ],
+													"presentation_rect" : [ 208.0, 183.0, 237.767563, 18.0 ],
+													"text" : [ "_($samples clear) ($shared.variables[0] = 0);" ]
 												}
 
 											}
@@ -14007,9 +13997,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 263.0, 158.0, 156.052734, 18.0 ],
-													"presentation_rect" : [ 263.0, 158.0, 156.052734, 18.0 ],
-													"text" : [ "_(if ($samples.empty == 1) 1)" ]
+													"patching_rect" : [ 263.0, 158.0, 176.748016, 18.0 ],
+													"presentation_rect" : [ 263.0, 158.0, 176.748016, 18.0 ],
+													"text" : [ "_(if ($shared.variables[0] == 1) 1)" ]
 												}
 
 											}
@@ -14092,7 +14082,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 10.0, 409.0, 843.0, 103.0 ],
-													"text" : "imports a file as fmat to $samples dict (by appending);\nsaves absolut HD path of the imprted file in $samples.paths fmat at an index corresponding to the index in $samples;\ncalculates and saves the size in ms of the imported file in the 1st column of $samples.len.off.sel.fmat at an appropriate index;\ncalculates and saves the inverse of the size in ms of the imported file in the 2nd column of $samples.len.off.sel.fmat at an appropriate index;\nsets the offset, selection.start, selection.end and selection.length values (0-1 normalized) in columns 3-6 of $samples.len.off.sel.fmat at an appropriate index,\ncolumns 7-10 are filed with the same data as columns 3-6 but expressed in milliseconds;\nsets $samples.size variable to the number of currently loaded samples and send it out of the outlet"
+													"text" : "imports a file as fmat to $samples dict (by appending);\nsaves absolut HD path of the imprted file in $samples.paths fmat at an index corresponding to the index in $samples;\ncalculates and saves the size in ms of the imported file in the 1st column of $samples.len.off.sel.fmat at an appropriate index;\ncalculates and saves the inverse of the size in ms of the imported file in the 2nd column of $samples.len.off.sel.fmat at an appropriate index;\nsets the offset, selection.start, selection.end and selection.length values (0-1 normalized) in columns 3-6 of $samples.len.off.sel.fmat at an appropriate index,\ncolumns 7-10 are filed with the same data as columns 3-6 but expressed in milliseconds;\nsets $shared.variables[1] variable to the number of currently loaded samples and send it out of the outlet"
 												}
 
 											}
@@ -14112,10 +14102,10 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 12.0, 206.0, 569.0, 101.0 ],
+													"patching_rect" : [ 12.0, 206.0, 602.0, 101.0 ],
 													"presentation_linecount" : 7,
-													"presentation_rect" : [ 12.0, 206.0, 569.0, 101.0 ],
-													"text" : [ "_($samples append (((new fmat) import $1) cols 1));", "_(($samples.paths append $1));", "_($samples.len.off.sel.fmat append (($samples[($samples.size)] rows) /  $FTM.audio.sr * 1000));", "_($samples.len.off.sel.fmat set $samples.size 1 (0.001 * $FTM.audio.sr / ($samples[($samples.size)] rows))", "_0 0 1 1 0 0 $samples.len.fvec[$samples.size] $samples.len.fvec[$samples.size]);", "_($samples.selection.len.rcpr.ms.fvec[$samples.size] = $samples.len.rcpr.fvec[$samples.size]);", "_(($samples.size = ($samples rows)) - 1)" ]
+													"presentation_rect" : [ 12.0, 206.0, 602.0, 101.0 ],
+													"text" : [ "_($samples append (((new fmat) import $1) cols 1));", "_(($samples.paths append $1));", "_($samples.len.off.sel.fmat append (($samples[($samples.size)] rows) /  $FTM.audio.sr * 1000));", "_($samples.len.off.sel.fmat set $shared.variables[1] 1 (0.001 * $FTM.audio.sr / ($samples[($samples.size)] rows))", "_0 0 1 1 0 0 $samples.len.fvec[$samples.size] $samples.len.fvec[$samples.size]);", "_($samples.selection.len.rcpr.ms.fvec[$samples.size] = $samples.len.rcpr.fvec[$samples.size]);", "_(($shared.variables[1] = ($samples rows)) - 1)" ]
 												}
 
 											}
@@ -14760,7 +14750,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 28.407318, 753.732422, 65.0, 19.0 ],
-									"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 0, 44, 1440, 783, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+									"save" : [ "#N", "thispatcher", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 									"text" : "thispatcher"
 								}
 
@@ -15702,7 +15692,7 @@
 					"prefix" : "audio",
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 300.0, 70.0 ],
-					"text" : "/engine~"
+					"text" : "/editing_this_module"
 				}
 
 			}
@@ -15773,7 +15763,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 753.0, 230.0, 24.0, 24.0 ]
 				}
 

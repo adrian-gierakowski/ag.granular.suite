@@ -1,6 +1,12 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 5,
+			"minor" : 1,
+			"revision" : 9
+		}
+,
 		"rect" : [ 0.0, 44.0, 1440.0, 826.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
@@ -39,6 +45,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-94",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -53,6 +60,7 @@
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 18.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-92",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -67,6 +75,7 @@
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 18.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-90",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -92,6 +101,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "1: play the sequence in loop mode (loop is defined by play/segment/beginning and play/segment/end parameters), 0: stop playback",
 					"bgcolor" : [ 0.827451, 0.827451, 0.827451, 1.0 ],
 					"bgoncolor" : [ 1.0, 0.501961, 0.0, 1.0 ],
 					"bgovercolor" : [ 1.0, 0.745098, 0.486275, 1.0 ],
@@ -121,6 +131,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "pause playback",
 					"bgcolor" : [ 0.827451, 0.827451, 0.827451, 1.0 ],
 					"bgoncolor" : [ 1.0, 0.501961, 0.0, 1.0 ],
 					"bgovercolor" : [ 1.0, 0.745098, 0.486275, 1.0 ],
@@ -559,6 +570,7 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-72",
 					"linecount" : 22,
 					"maxclass" : "comment",
@@ -843,6 +855,12 @@
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 5,
+							"minor" : 1,
+							"revision" : 9
+						}
+,
 						"rect" : [ 473.0, 448.0, 907.0, 325.0 ],
 						"bglocked" : 0,
 						"defrect" : [ 473.0, 448.0, 907.0, 325.0 ],
@@ -864,27 +882,13 @@
 								"box" : 								{
 									"fontname" : "Verdana",
 									"fontsize" : 10.0,
-									"id" : "obj-3",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 176.0, 155.0, 474.0, 17.0 ],
-									"text" : "#ftm.00000001.fmat #ftm.00000002.fmat #ftm.00000001.mat #ftm.00000002.mat"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Verdana",
-									"fontsize" : 10.0,
 									"id" : "obj-108",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 4,
-									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 20.0, 43.0, 189.0, 19.0 ],
-									"text" : "route int float samplesSizeChanged"
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 20.0, 43.0, 245.0, 19.0 ],
+									"text" : "route int float samplesSizeChanged engineUID"
 								}
 
 							}
@@ -933,19 +937,10 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 1 ],
-									"hidden" : 0,
-									"midpoints" : [  ],
-									"source" : [ "obj-108", 3 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
 									"hidden" : 0,
 									"midpoints" : [  ],
-									"source" : [ "obj-108", 3 ]
+									"source" : [ "obj-108", 4 ]
 								}
 
 							}
@@ -954,13 +949,13 @@
 ,
 					"patching_rect" : [ 566.0, 42.0, 195.0, 28.0 ],
 					"saved_object_attributes" : 					{
-						"fontname" : "Verdana",
-						"default_fontface" : 0,
 						"globalpatchername" : "",
 						"fontface" : 0,
-						"default_fontname" : "Verdana",
 						"fontsize" : 10.0,
-						"default_fontsize" : 10.0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"default_fontsize" : 10.0,
+						"fontname" : "Verdana"
 					}
 ,
 					"text" : "p engine_data_sync"
@@ -1114,6 +1109,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "end of playback segment (or loop) [ms]",
 					"fontname" : "Verdana",
 					"fontsize" : 7.0,
 					"hint" : "/play/segment/end",
@@ -1131,6 +1127,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "beginig of playback segment (or loop) [ms]",
 					"fontname" : "Verdana",
 					"fontsize" : 7.0,
 					"hint" : "/play//segment/beginning",
@@ -1148,6 +1145,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "set playback speed (1: original speed, 2: double speed, 0.5: half speed, -1: backward at original speed)",
 					"fontname" : "Verdana",
 					"fontsize" : 7.0,
 					"hint" : "/play/speed",
@@ -1285,10 +1283,12 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "load sequence from a file. The path will be saved within a preset and the sequence reloaded every time a preset is recalled. To save a preset without a specified sequence, set this parameter to 'nil'",
 					"border" : 1.0,
 					"bordercolor" : [ 0.392157, 0.392157, 0.392157, 1.0 ],
 					"fontname" : "Verdana",
 					"fontsize" : 9.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"hint" : "sequence/autoload",
 					"id" : "obj-166",
 					"maxclass" : "textedit",
@@ -1502,7 +1502,7 @@
 					"outlettype" : [ "" ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 300.0, 70.0 ],
-					"text" : "/editing_this_module.2"
+					"text" : "/editing_this_module"
 				}
 
 			}
