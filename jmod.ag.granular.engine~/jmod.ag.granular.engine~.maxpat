@@ -868,8 +868,8 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1522.122925, 746.774536, 180.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"ftm_scope" : 0,
-										"ftm_objref_conv" : 0
+										"ftm_objref_conv" : 0,
+										"ftm_scope" : 0
 									}
 ,
 									"text" : "gbr.copy @unit msec @out $grain"
@@ -3624,13 +3624,13 @@
 ,
 									"patching_rect" : [ 11.919998, 381.369995, 211.0, 24.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontname" : "Verdana",
+										"default_fontface" : 0,
 										"fontname" : "Verdana",
+										"default_fontname" : "Verdana",
 										"default_fontsize" : 10.0,
 										"globalpatchername" : "",
 										"fontface" : 0,
-										"fontsize" : 10.0,
-										"default_fontface" : 0
+										"fontsize" : 10.0
 									}
 ,
 									"text" : "p gain_channels_gain_delay"
@@ -3797,8 +3797,8 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 2076.0, 726.5, 207.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"ftm_scope" : 0,
-										"ftm_objref_conv" : 0
+										"ftm_objref_conv" : 0,
+										"ftm_scope" : 0
 									}
 ,
 									"text" : "gbr.copy @unit msec @out $grain.int.2"
@@ -3817,8 +3817,8 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1970.0, 764.0, 244.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"ftm_scope" : 0,
-										"ftm_objref_conv" : 0
+										"ftm_objref_conv" : 0,
+										"ftm_scope" : 0
 									}
 ,
 									"text" : "ftm.inter $grain.int.1 $grain.int.2 @out $grain"
@@ -3837,8 +3837,8 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 2001.0, 642.888855, 207.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"ftm_scope" : 0,
-										"ftm_objref_conv" : 0
+										"ftm_objref_conv" : 0,
+										"ftm_scope" : 0
 									}
 ,
 									"text" : "gbr.copy @unit msec @out $grain.int.1"
@@ -3998,8 +3998,8 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 969.0, 512.599976, 180.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"ftm_scope" : 0,
-										"ftm_objref_conv" : 0
+										"ftm_objref_conv" : 0,
+										"ftm_scope" : 0
 									}
 ,
 									"text" : "gbr.copy @unit msec @out $grain"
@@ -4355,8 +4355,8 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 191.0, 328.0, 305.0, 23.0 ],
 									"saved_object_attributes" : 									{
-										"ftm_scope" : 0,
-										"ftm_objref_conv" : 0
+										"ftm_objref_conv" : 0,
+										"ftm_scope" : 0
 									}
 ,
 									"text" : "gbr.resample @mode cubic @out $grain.trans"
@@ -4801,8 +4801,8 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 4.0, 266.75, 76.0, 45.0 ],
 													"saved_object_attributes" : 													{
-														"ftm_scope" : 0,
-														"ftm_objref_conv" : 0
+														"ftm_objref_conv" : 0,
+														"ftm_scope" : 0
 													}
 ,
 													"text" : "gbr.wind= hann"
@@ -4968,13 +4968,13 @@
 ,
 									"patching_rect" : [ 460.0, 156.0, 99.0, 24.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontname" : "Verdana",
+										"default_fontface" : 0,
 										"fontname" : "Verdana",
+										"default_fontname" : "Verdana",
 										"default_fontsize" : 10.0,
 										"globalpatchername" : "",
 										"fontface" : 0,
-										"fontsize" : 10.0,
-										"default_fontface" : 0
+										"fontsize" : 10.0
 									}
 ,
 									"text" : "p windowing"
@@ -5030,8 +5030,8 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
 									"patching_rect" : [ 12.0, 525.75, 544.0, 24.0 ],
 									"saved_object_attributes" : 									{
-										"ftm_scope" : 0,
-										"ftm_objref_conv" : 0
+										"ftm_objref_conv" : 0,
+										"ftm_scope" : 0
 									}
 ,
 									"text" : "gbr.ola~ 16 10000 @interp off"
@@ -6123,13 +6123,13 @@
 ,
 					"patching_rect" : [ 596.0, 453.5, 177.0, 28.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontname" : "Verdana",
+						"default_fontface" : 0,
 						"fontname" : "Verdana",
+						"default_fontname" : "Verdana",
 						"default_fontsize" : 10.0,
 						"globalpatchername" : "",
 						"fontface" : 0,
-						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"fontsize" : 10.0
 					}
 ,
 					"text" : "p generate.grain",
@@ -6584,8 +6584,8 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 1270.0, 267.25, 48.0, 19.0 ],
 													"saved_object_attributes" : 													{
-														"ftm_scope" : 0,
-														"ftm_objref_conv" : 0
+														"ftm_objref_conv" : 0,
+														"ftm_scope" : 0
 													}
 ,
 													"text" : "ftm.iter"
@@ -7190,8 +7190,8 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 34.0, 280.0, 48.0, 19.0 ],
 													"saved_object_attributes" : 													{
-														"ftm_scope" : 0,
-														"ftm_objref_conv" : 0
+														"ftm_objref_conv" : 0,
+														"ftm_scope" : 0
 													}
 ,
 													"text" : "ftm.iter"
@@ -7807,13 +7807,13 @@
 ,
 									"patching_rect" : [ 995.0, 214.0, 199.0, 24.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontname" : "Verdana",
+										"default_fontface" : 0,
 										"fontname" : "Verdana",
+										"default_fontname" : "Verdana",
 										"default_fontsize" : 10.0,
 										"globalpatchername" : "",
 										"fontface" : 0,
-										"fontsize" : 10.0,
-										"default_fontface" : 0
+										"fontsize" : 10.0
 									}
 ,
 									"text" : "p load_collection_from_txt"
@@ -8588,13 +8588,13 @@
 ,
 									"patching_rect" : [ 1259.0, 351.666656, 168.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontname" : "Arial",
+										"default_fontface" : 0,
 										"fontname" : "Arial",
+										"default_fontname" : "Arial",
 										"default_fontsize" : 12.0,
 										"globalpatchername" : "",
 										"fontface" : 0,
-										"fontsize" : 12.0,
-										"default_fontface" : 0
+										"fontsize" : 12.0
 									}
 ,
 									"text" : "p reset.stuff.related.to.samples"
@@ -9667,13 +9667,13 @@
 ,
 					"patching_rect" : [ 585.0, 138.0, 212.0, 28.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontname" : "Verdana",
+						"default_fontface" : 0,
 						"fontname" : "Verdana",
+						"default_fontname" : "Verdana",
 						"default_fontsize" : 10.0,
 						"globalpatchername" : "",
 						"fontface" : 0,
-						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"fontsize" : 10.0
 					}
 ,
 					"text" : "p jamoma.parameters"
@@ -9858,6 +9858,28 @@
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"description" : "var 0",
+									"editor_interface" : "",
+									"fontname" : "Verdana",
+									"fontsize" : 10.0,
+									"ftm_objref_conv" : 0,
+									"ftm_scope" : 0,
+									"id" : "obj-40",
+									"maxclass" : "ftm.object",
+									"name" : "samples.size",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 883.0, 149.0, 116.183594, 18.0 ],
+									"persistence" : 0,
+									"presentation_rect" : [ 883.0, 149.0, 116.183594, 18.0 ],
+									"scope" : 0,
+									"text" : "samples.size"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Verdana",
 									"fontsize" : 10.0,
@@ -10464,13 +10486,13 @@
 ,
 									"patching_rect" : [ 1147.0, 184.0, 66.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontname" : "Verdana",
+										"default_fontface" : 0,
 										"fontname" : "Verdana",
+										"default_fontname" : "Verdana",
 										"default_fontsize" : 10.0,
 										"globalpatchername" : "",
 										"fontface" : 0,
-										"fontsize" : 10.0,
-										"default_fontface" : 0
+										"fontsize" : 10.0
 									}
 ,
 									"text" : "p pancurve"
@@ -10747,9 +10769,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 494.0, 12.0, 171.183594, 18.0 ],
+									"patching_rect" : [ 494.0, 12.0, 168.292969, 18.0 ],
 									"persistence" : 0,
-									"presentation_rect" : [ 494.0, 12.0, 171.183594, 18.0 ],
+									"presentation_rect" : [ 494.0, 12.0, 168.292969, 18.0 ],
 									"scope" : 0,
 									"text" : "fmat 2 1 1 0"
 								}
@@ -11428,13 +11450,13 @@
 ,
 					"patching_rect" : [ 585.0, 104.0, 141.0, 28.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontname" : "Verdana",
+						"default_fontface" : 0,
 						"fontname" : "Verdana",
+						"default_fontname" : "Verdana",
 						"default_fontsize" : 10.0,
 						"globalpatchername" : "",
 						"fontface" : 0,
-						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"fontsize" : 10.0
 					}
 ,
 					"text" : "p ftm.variabes"
@@ -12408,13 +12430,13 @@
 ,
 									"patching_rect" : [ 862.0, 214.333313, 53.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontname" : "Verdana",
+										"default_fontface" : 0,
 										"fontname" : "Verdana",
+										"default_fontname" : "Verdana",
 										"default_fontsize" : 10.0,
 										"globalpatchername" : "",
 										"fontface" : 0,
-										"fontsize" : 10.0,
-										"default_fontface" : 0
+										"fontsize" : 10.0
 									}
 ,
 									"text" : "p iterate"
@@ -13037,13 +13059,13 @@
 ,
 									"patching_rect" : [ 517.37439, 604.40509, 93.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontname" : "Verdana",
+										"default_fontface" : 0,
 										"fontname" : "Verdana",
+										"default_fontname" : "Verdana",
 										"default_fontsize" : 10.0,
 										"globalpatchername" : "",
 										"fontface" : 0,
-										"fontsize" : 10.0,
-										"default_fontface" : 0
+										"fontsize" : 10.0
 									}
 ,
 									"text" : "p waveeditor.init"
@@ -14397,13 +14419,13 @@
 ,
 									"patching_rect" : [ 68.0, 348.0, 247.0, 28.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontname" : "Arial",
+										"default_fontface" : 0,
 										"fontname" : "Arial",
+										"default_fontname" : "Arial",
 										"default_fontsize" : 12.0,
 										"globalpatchername" : "",
 										"fontface" : 0,
-										"fontsize" : 12.0,
-										"default_fontface" : 0
+										"fontsize" : 12.0
 									}
 ,
 									"text" : "p import.samples"
@@ -14639,13 +14661,13 @@
 ,
 									"patching_rect" : [ 372.0, 272.0, 87.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontname" : "Arial",
+										"default_fontface" : 0,
 										"fontname" : "Arial",
+										"default_fontname" : "Arial",
 										"default_fontsize" : 12.0,
 										"globalpatchername" : "",
 										"fontface" : 0,
-										"fontsize" : 12.0,
-										"default_fontface" : 0
+										"fontsize" : 12.0
 									}
 ,
 									"text" : "p folder_loader"
@@ -15622,13 +15644,13 @@
 ,
 					"patching_rect" : [ 797.0, 383.0, 75.0, 28.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontname" : "Verdana",
+						"default_fontface" : 0,
 						"fontname" : "Verdana",
+						"default_fontname" : "Verdana",
 						"default_fontsize" : 10.0,
 						"globalpatchername" : "",
 						"fontface" : 0,
-						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"fontsize" : 10.0
 					}
 ,
 					"text" : "p panel"
