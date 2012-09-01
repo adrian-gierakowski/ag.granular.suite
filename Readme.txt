@@ -1,3 +1,5 @@
+current version: 1.1
+
 DESCRIPTION:
 
 Ag.granular.suite is a collection of Max/Msp patches for generalised granular sound processing written by Adrian Gierakowski using FTM/Gabor libraries (developed at IRCAM) and encapsulated as Jamoma modules. Main features include: subsample accurate scheduling, multichannel output, granulation of multiple soundfiles at the same time (with interpolation of two sources per grain), parameter randomisation and sequencing, control via OSC, preset management, preset interpolation. Its modular architecture makes it possible to easily extend it with new algorithms for grain scheduling and parameter control.
@@ -6,15 +8,15 @@ Ag.granular.suite is a collection of Max/Msp patches for generalised granular so
 SOFTWARE REQUIREMENTS:
 To use this patches you will need to install: 
 
-Max/Msp 5
+Max/Msp 5 or 6
 
-FTM 2.5.0 BETA 20:  http://ftm.ircam.fr/downloads/FTM.2.5.0.BETA.20-Max5.dmg
+FTM 2.5.0 beta release (BETA 24): http://ftm.ircam.fr/downloads/FTM.2.5.0.BETA.24.dmg
 
 and 
 
-Jamoma 0.5.2:  http://jamoma.org/download/Jamoma-0.5.2.dmg 
+Jamoma 0.5.6 beta 7:  http://www.jamoma.org/download/Jamoma-0.5.6-b7.dmg
 
-Please note the due dependency on randiest external the ag.granular.suite currently works only on OSX.
+Please note the due dependency on randdist external the ag.granular.suite currently works only on OSX. I'd be happy to hear from someone who would like to port randdist to windows :)
 
 If you instal the Jamoma UserLib package, please locate and delete the ag.granular folder installed by it in the Max application folder since it contains outdated versions of the modules.
 
@@ -58,10 +60,10 @@ jmod.ag.granular.modulate
 
 Similar to  jmod.ag.granular.control but  each  algorithm generating a grain parameter can be set to modify values in the grain parameter vector using one of four different modes:
 
-1.	Bypass â€“ leaves currently stored value unchanged
-2.	Add â€“ adds a generated value to the one currently stored
-3.	Multiply â€“ multiplies currently stored value by the generated value
-4.	Replace â€“ replaces currently stored value
+1.	Bypass â leaves currently stored value unchanged
+2.	Add â adds a generated value to the one currently stored
+3.	Multiply â multiplies currently stored value by the generated value
+4.	Replace â replaces currently stored value
 
 Can be used to further extend the possibilities offered by jmod.ag.granular.control or to alter a stream of grains generated from a sequence recorded with jmod.ag.granular.record.
 
@@ -69,3 +71,9 @@ Can be used to further extend the possibilities offered by jmod.ag.granular.cont
 jmod.ag.presetmixpad
 
 An X/Y pad, which can be divided into a grid of rectangular zones with user definable number of rows, columns and dimensions in pixels. Each corner of a zone can be assign a preset number. Dragging with a mouse on the pad generates messages containing the numbers of four presets and their relative weights, which depend on the position of the mouse pointer on the pad. This message can be sent to any Jamoma module allowing for easy control over interpolation of multiple presets.
+
+jmod.ag.granular.livebuffer~
+
+provides a live audio input as a source for grains, multiple modules can be used to allow for granulation of multiple audio streams
+
+
