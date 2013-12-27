@@ -1,4 +1,4 @@
-current version: 1.1
+current version: 1.1.2
 
 DESCRIPTION:
 
@@ -8,13 +8,10 @@ Ag.granular.suite is a collection of Max/Msp patches for generalised granular so
 SOFTWARE REQUIREMENTS:
 To use this patches you will need to install: 
 
-Max/Msp 5 or 6
-
-FTM 2.5.0 beta release (BETA 24): http://ftm.ircam.fr/downloads/FTM.2.5.0.BETA.24.dmg
-
-and 
-
-Jamoma 0.5.6 beta 7:  http://www.jamoma.org/download/Jamoma-0.5.6-b7.dmg
+Max/Msp 6 or 6.1 from: http://cycling74.com/downloads/ 
+as well as a couple of add-ons:
+FTM 2.6.0 beta from: http://ftm.ircam.fr/index.php/Download
+Jamoma 0.5.7 from:  http://jamoma.org/download/http://jamoma.org/download/
 
 Please note the due dependency on randdist external the ag.granular.suite currently works only on OSX. I'd be happy to hear from someone who would like to port randdist to windows :)
 
