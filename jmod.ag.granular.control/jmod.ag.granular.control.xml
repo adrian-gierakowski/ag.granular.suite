@@ -23,7 +23,7 @@
     <item name='delay/random/distribution/exponential' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='delay/random/distribution/gaussian' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='delay/random/distribution/laplace' type='decimal' priority='1' mixweight='1'>0.000000</item>
-    <item name='delay/random/distribution/type' type='string' priority='0' mixweight='1'>0</item>
+    <item name='delay/random/distribution/type' type='string' priority='0' mixweight='1'>uniform</item>
     <item name='delay/random/linkToPlayPeriod/on' type='integer' priority='0' mixweight='1'>0</item>
     <item name='delay/random/linkToPlayPeriod/ratio' type='decimal' priority='3' mixweight='0'>0.000000</item>
     <item name='delay/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>

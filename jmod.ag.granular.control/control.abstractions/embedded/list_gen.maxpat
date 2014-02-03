@@ -777,9 +777,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 411.0, 254.0, 144.183594, 18.0 ],
+					"patching_rect" : [ 846.0, 233.0, 144.183594, 18.0 ],
 					"persistence" : 0,
-					"presentation_rect" : [ 411.0, 254.0, 144.183594, 18.0 ],
+					"presentation_rect" : [ 846.0, 233.0, 144.183594, 18.0 ],
 					"scope" : 0,
 					"text" : "fmat 512 1"
 				}
@@ -2448,7 +2448,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 411.0, 296.0, 56.0, 19.0 ],
+					"patching_rect" : [ 846.0, 275.0, 56.0, 19.0 ],
 					"text" : "loadbang"
 				}
 
@@ -2468,8 +2468,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 318.0, 201.547867, 17.0 ],
-					"presentation_rect" : [ 411.0, 318.0, 201.547867, 17.0 ],
+					"patching_rect" : [ 846.0, 297.0, 201.547867, 17.0 ],
+					"presentation_rect" : [ 846.0, 297.0, 201.547867, 17.0 ],
 					"text" : [ "_set $listgen wave, view 0 shape peaks" ]
 				}
 
@@ -2488,9 +2488,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 411.0, 275.0, 115.0, 18.0 ],
+					"patching_rect" : [ 846.0, 254.0, 115.0, 18.0 ],
 					"persistence" : 0,
-					"presentation_rect" : [ 411.0, 275.0, 115.0, 18.0 ],
+					"presentation_rect" : [ 846.0, 254.0, 115.0, 18.0 ],
 					"scope" : 0,
 					"text" : "fmat 512 1"
 				}
@@ -2525,9 +2525,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 175.0, 288.0, 215.395493, 17.0 ],
-					"presentation_rect" : [ 175.0, 288.0, 215.395493, 17.0 ],
-					"text" : [ "_replace $listgen wave, autoviewbounds 1" ]
+					"patching_rect" : [ 175.0, 288.0, 282.255859, 17.0 ],
+					"presentation_rect" : [ 175.0, 288.0, 282.255859, 17.0 ],
+					"text" : [ "_replace $listgen wave, autoviewbounds 1, forceredraw" ]
 				}
 
 			}
@@ -2605,7 +2605,8 @@
 					"patching_rect" : [ 85.0, 358.0, 112.0, 126.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 108.0, 112.0, 70.0 ],
-					"rounded" : 1.0
+					"rounded" : 1.0,
+					"text" : "0. 1."
 				}
 
 			}
@@ -3679,42 +3680,42 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "listgen_random.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "randist_params+type.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "listgen_ramp_step.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "listgen_ramp_min_max.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "listgen_curve_power.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "listgen_curve_exp_log.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
