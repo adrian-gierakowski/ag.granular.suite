@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, -1036.0, 1920.0, 990.0 ],
+		"rect" : [ 0.0, 44.0, 1440.0, 722.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -203,7 +203,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 150.0, 1241.0, 127.0, 19.0 ],
+					"patching_rect" : [ 102.5, 1204.0, 127.0, 19.0 ],
 					"text" : "r #0/livebuffer/init.to"
 				}
 
@@ -219,7 +219,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 150.0, 1267.0, 591.0, 31.0 ],
+					"patching_rect" : [ 102.5, 1230.0, 591.0, 31.0 ],
 					"text" : "jcom.message livebuffer/init @type none @repetitions/allow 1 @description \"intialize the live buffer as source 0 in the sample bank\""
 				}
 
@@ -829,6 +829,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "size of the livebuffer in milliseconds. Changes to this parameter will only take effect once DSP is turned off",
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"id" : "obj-241",
@@ -1277,6 +1278,7 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Verdana",
@@ -2655,7 +2657,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 3.5, 252.0, 72.12793, 16.148438 ],
+									"patching_rect" : [ 3.5, 252.0, 72.12793, 17.0 ],
 									"presentation_rect" : [ 3.5, 252.0, 72.12793, 16.148438 ],
 									"text" : [ "_(new fmat 0)" ]
 								}
@@ -3032,7 +3034,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 98.0, 933.0, 604.0, 43.0 ],
+					"patching_rect" : [ 98.0, 933.0, 606.0, 43.0 ],
 					"text" : "jcom.parameter livebuffer/sizeMs @type integer @range/bounds 1 20000 @range/clipmode low @repetitions/allow 0 @description \"size of the livebuffer in milliseconds. Changes to this parameter will only take effect once DSP is turned off\""
 				}
 
@@ -3126,8 +3128,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1096.5, 1120.0, 122.0, 19.0 ],
-					"text" : "qmetro 100 @active 1"
+					"patching_rect" : [ 1096.5, 1120.0, 69.0, 19.0 ],
+					"text" : "qmetro 100"
 				}
 
 			}
@@ -6151,7 +6153,7 @@
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"ftm_objref_conv" : 0,
-					"ftm_scope" : 2,
+					"ftm_scope" : 0,
 					"id" : "obj-52",
 					"maxclass" : "ftm.object",
 					"name" : "buffer.size",
@@ -6627,6 +6629,26 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"id" : "obj-76",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1236.0, 358.0, 190.0, 19.0 ],
+					"saved_object_attributes" : 					{
+						"ftm_objref_conv" : 0,
+						"ftm_scope" : 2
+					}
+,
+					"text" : "gbr.dline~ #0_livebuffer 5000.0000",
+					"varname" : "livebuffer_dline"
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -6743,6 +6765,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-76", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-170", 0 ]
 				}
 
 			}
@@ -7374,6 +7405,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-76", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-61", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -7455,6 +7495,10 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "gbr.dline~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "jcom.hub.mxo",
 				"type" : "iLaX"
 			}
