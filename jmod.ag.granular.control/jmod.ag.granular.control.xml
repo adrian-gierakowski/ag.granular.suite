@@ -75,7 +75,7 @@
     <item name='length/random/maxdev' type='decimal' priority='1' mixweight='1'>0.000000</item>
     <item name='length/random/mode' type='integer' priority='0' mixweight='1'>0</item>
     <item name='length/random/round' type='integer' priority='1' mixweight='1'>0</item>
-    <item name='position/adjust' type='string' priority='1' mixweight='1'>off</item>
+    <item name='position/adjust' type='string' priority='1' mixweight='1'>selection</item>
     <item name='position/clipwrap' type='string' priority='0' mixweight='1'>wrap</item>
     <item name='position/freeze' type='boolean' priority='0' mixweight='1'>0</item>
     <item name='position/list/cyclic/direction' type='string' priority='1' mixweight='1'>0</item>
