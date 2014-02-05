@@ -36,7 +36,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 480.989258, 531.0, 99.0, 18.0 ],
+					"patching_rect" : [ 480.989258, 531.0, 109.0, 18.0 ],
 					"text" : "s #0_clear_display"
 				}
 
@@ -49,7 +49,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 480.989258, 558.716553, 148.0, 19.0 ],
+					"patching_rect" : [ 480.989258, 558.716553, 158.0, 19.0 ],
 					"text" : "s #0_sample_display_in[1]"
 				}
 
@@ -134,8 +134,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 279.625488, 296.010498, 96.689453, 17.0 ],
-									"presentation_rect" : [ 279.625488, 296.010498, 96.689453, 17.0 ],
+									"patching_rect" : [ 279.625488, 296.010498, 92.689453, 17.0 ],
+									"presentation_rect" : [ 279.625488, 296.010498, 92.689453, 16.148438 ],
 									"text" : [ "_replace ($2 zero)" ]
 								}
 
@@ -163,7 +163,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 263.890625, 150.5, 97.0, 18.0 ],
+									"patching_rect" : [ 263.890625, 150.5, 107.0, 18.0 ],
 									"text" : "r #0_clear_display"
 								}
 
@@ -294,7 +294,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 150.890625, 296.010498, 58.602535, 17.0 ],
-									"presentation_rect" : [ 150.890625, 296.010498, 58.602535, 17.0 ],
+									"presentation_rect" : [ 150.890625, 296.010498, 58.602535, 16.148438 ],
 									"text" : [ "_replace $2" ]
 								}
 
@@ -892,7 +892,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 97.0, 157.2146, 389.251923, 17.0 ],
+									"patching_rect" : [ 97.0, 157.2146, 389.251923, 16.148438 ],
 									"presentation_rect" : [ 97.0, 157.2146, 389.251923, 16.148438 ],
 									"text" : [ "_($display_samples_per_ms = $1 * 0.001); ($display_step = 1 / $1 * 1000)" ]
 								}
@@ -937,7 +937,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 97.0, 206.2146, 79.759766, 17.0 ],
+									"patching_rect" : [ 97.0, 206.2146, 79.759766, 16.148438 ],
 									"presentation_rect" : [ 97.0, 206.2146, 79.759766, 16.148438 ],
 									"text" : [ "_view 0 step $1" ]
 								}
@@ -1087,8 +1087,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 63.5, 272.989502, 118.0, 18.0 ],
-									"text" : "s #0_update_sample"
+									"patching_rect" : [ 63.5, 272.989502, 116.0, 18.0 ],
+									"text" : "s #0_update_region"
 								}
 
 							}
@@ -1351,7 +1351,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1289.0, 156.406006, 24.0, 24.0 ]
 				}
 
@@ -1556,7 +1556,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "samplesSizeChanged" ],
 									"patching_rect" : [ 5.0, 5.0, 25.0, 25.0 ]
 								}
 
@@ -2915,7 +2915,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "samplesSizeChanged" ],
 					"patching_rect" : [ 825.0, 150.616455, 24.0, 24.0 ]
 				}
 
@@ -3048,6 +3048,7 @@
 									"fontname" : "Verdana",
 									"fontsize" : 10.0,
 									"id" : "obj-544",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -3502,7 +3503,7 @@
 					"patching_rect" : [ -0.387695, 0.0, 450.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -0.387695, 0.0, 450.0, 35.0 ],
-					"text" : "/editing_this_module",
+					"text" : "/display.1",
 					"varname" : "jcomui"
 				}
 
@@ -3768,35 +3769,6 @@
 					"source" : [ "obj-93", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "jcom.ui.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.mess.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.object.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "jcom.hub.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "jcom.parameter.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "jcom.in.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "jcom.message.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
