@@ -72,10 +72,10 @@ Plays back a stream of grain parameter vectors recorded with jmod.ag.granular.re
 
 Similar to jmod.ag.granular.control but each algorithm generating a grain parameter can be set to modify values in the grain parameter vector using one of four different modes:
 
-1.	Bypass â leaves currently stored value unchanged
-2.	Add â adds a generated value to the one currently stored
-3.	Multiply â multiplies currently stored value by the generated value
-4.	Replace â replaces currently stored value
+1.	Bypass: leaves currently stored value unchanged
+2.	Add: adds a generated value to the one currently stored
+3.	Multiply: multiplies currently stored value by the generated value
+4.	Replace: replaces currently stored value
 
 Can be used to further extend the possibilities offered by jmod.ag.granular.control or to alter a stream of grains generated from a sequence recorded with jmod.ag.granular.record.
 
