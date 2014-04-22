@@ -17,12 +17,11 @@ Its modular architecture makes it possible to easily extend it with new algorith
 
 ## SOFTWARE REQUIREMENTS
 
-To use this patches you will need to install: 
+To use this patches you will need to install:  
+Max/MSP 6 or 6.1 from: http://cycling74.com/downloads/
 
-Max/MSP 6 or 6.1 from: http://cycling74.com/downloads/ 
-
-as well as a couple of add-ons: 
-FTM 2.6.0 beta from: http://ftm.ircam.fr/index.php/Download 
+as well as a couple of add-ons:  
+FTM 2.6.0 beta from: http://ftm.ircam.fr/index.php/Download  
 Jamoma 0.5.7 from:  http://jamoma.org/download/http://jamoma.org/download/
 
 Please note the due dependency on randdist external the ag.granular.suite currently works only on OSX.
@@ -51,7 +50,7 @@ To listen to examples in this patch you will have to download the required sampl
 
 This module is the heart of the granular suite as it generates grains and outputs them as a stream of up to 16 channels of audio. A bang in its rightmost inlet triggers a grain, which is synthesized based on values stored in a vector of grain parameters (a pointer to this vector is shared between all modules which have been synced to the engine, which enables them to modify grain parameters). Grains are created dynamically and there is no limit to the number of overlapping grains except for the limitations of the hardware.
 
-The source samples for granulation are loaded in the engine’s control panel (number of samples is limited only by the available RAM). Sample collections can be saved and recalled from the panel (for that purpose a text file is used, which contains paths to the location of the samples on the hard drive).
+The source samples for granulation are loaded in the engine's control panel (number of samples is limited only by the available RAM). Sample collections can be saved and recalled from the panel (for that purpose a text file is used, which contains paths to the location of the samples on the hard drive).
 
 
 * **jmod.ag.granular.control**
