@@ -20,6 +20,7 @@ Its modular architecture makes it possible to easily extend it with new algorith
 To use this patches you will need to install: 
 
 Max/MSP 6 or 6.1 from: http://cycling74.com/downloads/ 
+
 as well as a couple of add-ons:
 FTM 2.6.0 beta from: http://ftm.ircam.fr/index.php/Download
 Jamoma 0.5.7 from:  http://jamoma.org/download/http://jamoma.org/download/
