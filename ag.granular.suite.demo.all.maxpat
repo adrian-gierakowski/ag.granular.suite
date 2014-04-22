@@ -244,8 +244,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 769.0, 32.0, 142.0, 196.0 ],
-					"tabs" : [ "modeules overview", "engine~", "control", "record", "play", "modulate", "presetmixpad" ],
+					"patching_rect" : [ 770.5, 60.0, 138.5, 168.0 ],
+					"tabs" : [ "engine~", "control", "record", "play", "modulate", "presetmixpad" ],
 					"truncate" : 0
 				}
 
@@ -260,9 +260,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 780.0, 7.0, 123.0, 22.0 ],
+					"patching_rect" : [ 770.5, 36.0, 138.5, 22.0 ],
 					"text" : "Documentation",
-					"textcolor" : [ 0.827451, 0.827451, 0.827451, 1.0 ]
+					"textcolor" : [ 0.827451, 0.827451, 0.827451, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
@@ -276,9 +277,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 482.0, 65.0, 142.0, 22.0 ],
+					"patching_rect" : [ 477.0, 60.0, 142.0, 22.0 ],
 					"text" : "Examples of use",
-					"textcolor" : [ 0.827451, 0.827451, 0.827451, 1.0 ]
+					"textcolor" : [ 0.827451, 0.827451, 0.827451, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
@@ -294,7 +296,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 623.0, 60.0, 142.0, 168.0 ],
+					"patching_rect" : [ 624.0, 60.0, 142.0, 168.0 ],
 					"tabs" : [ "1. Introduction", "2a. Control Module", "2b. Control Module", "2c. Control Module", "3. Record, Play, Modulate", "4. Presetmixpad" ],
 					"truncate" : 0
 				}
@@ -310,9 +312,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 634.0, 36.0, 123.0, 22.0 ],
+					"patching_rect" : [ 624.0, 36.0, 142.0, 22.0 ],
 					"text" : "Video Tutorials",
-					"textcolor" : [ 0.827451, 0.827451, 0.827451, 1.0 ]
+					"textcolor" : [ 0.827451, 0.827451, 0.827451, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
@@ -329,7 +332,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 477.0, 88.0, 142.0, 140.0 ],
-					"tabs" : [ "preset mixing demo", "audio example", "Unitas Multiplex - about", "Unitas Multiplex - audio", "Unitas Multiplex - video" ]
+					"tabs" : [ "preset mixing demo", "audio example", "live performance", "iPad interface" ]
 				}
 
 			}
@@ -372,6 +375,50 @@
 						"tags" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"id" : "obj-43",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "int" ],
+									"patching_rect" : [ 685.0, 485.0, 150.0, 21.0 ],
+									"text" : "conformpath native boot"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Verdana",
+									"fontsize" : 10.0,
+									"id" : "obj-34",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 672.0, 598.0, 345.0, 29.0 ],
+									"text" : "file:///Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.presetmixpad/jmod.ag.presetmixpad.html"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Verdana",
+									"fontsize" : 10.0,
+									"id" : "obj-11",
+									"linecount" : 3,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 600.5, 659.0, 519.0, 41.0 ],
+									"text" : "\"file://Macintosh HD:/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.record/jmod.ag.granular.record.html\""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontname" : "Verdana",
 									"fontsize" : 10.0,
 									"id" : "obj-26",
@@ -380,8 +427,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 897.0, 279.0, 382.0, 29.0 ],
-									"text" : "http://www.audibledata.com/Download_files/samples_for_ag.granular.suite.zip"
+									"patching_rect" : [ 897.0, 279.0, 379.0, 29.0 ],
+									"text" : "https://dl.dropbox.com/s/5hl7c2jhldvpjy6/samples_for_ag.granular.suite.zip"
 								}
 
 							}
@@ -406,8 +453,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 104.199997, 129.0, 535.0, 17.0 ],
-									"text" : "http://www.audibledata.com/Podcast/Entries/2011/6/6_Tutorial_2c__the_control_module_cont._2.html"
+									"patching_rect" : [ 165.199997, 161.0, 160.0, 17.0 ],
+									"text" : "https://vimeo.com/24723138"
 								}
 
 							}
@@ -420,8 +467,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 71.199997, 110.0, 523.0, 17.0 ],
-									"text" : "http://www.audibledata.com/Podcast/Entries/2011/6/6_Tutorial_2b__the_control_module_cont..html"
+									"patching_rect" : [ 132.199997, 142.0, 160.0, 17.0 ],
+									"text" : "https://vimeo.com/24723068"
 								}
 
 							}
@@ -434,8 +481,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 137.199997, 148.0, 519.0, 17.0 ],
-									"text" : "http://www.audibledata.com/Podcast/Entries/2011/6/6_Tutorial_3__record_-_play_-_modulate.html"
+									"patching_rect" : [ 198.199997, 180.0, 160.0, 17.0 ],
+									"text" : "https://vimeo.com/24724634"
 								}
 
 							}
@@ -448,8 +495,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 38.199997, 91.0, 492.0, 17.0 ],
-									"text" : "http://www.audibledata.com/Podcast/Entries/2011/6/6_Tutorial_2a__the_control_module.html"
+									"patching_rect" : [ 99.199997, 123.0, 160.0, 17.0 ],
+									"text" : "https://vimeo.com/24722830"
 								}
 
 							}
@@ -462,8 +509,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 5.0, 72.0, 543.0, 17.0 ],
-									"text" : "http://www.audibledata.com/Podcast/Entries/2011/1/24_Tutorial_1__overview_of_ag.granular.suite.html"
+									"patching_rect" : [ 66.0, 104.0, 160.0, 17.0 ],
+									"text" : "https://vimeo.com/19109771"
 								}
 
 							}
@@ -472,13 +519,12 @@
 									"fontname" : "Verdana",
 									"fontsize" : 10.0,
 									"id" : "obj-10",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 884.0, 74.0, 220.0, 29.0 ],
-									"text" : "http://www.bek.no/groups/jamoma/wiki/c05cb/Documentation_and_tutorials.html"
+									"patching_rect" : [ 884.0, 74.0, 184.0, 17.0 ],
+									"text" : "http://www.jamoma.org/tutorials/"
 								}
 
 							}
@@ -503,8 +549,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 170.199997, 167.0, 453.0, 17.0 ],
-									"text" : "http://www.audibledata.com/Podcast/Entries/2011/6/6_Tutorial_4__presetmixpad.html"
+									"patching_rect" : [ 231.199997, 199.0, 160.0, 17.0 ],
+									"text" : "https://vimeo.com/24724712"
 								}
 
 							}
@@ -513,13 +559,12 @@
 									"fontname" : "Verdana",
 									"fontsize" : 10.0,
 									"id" : "obj-46",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 52.0, 393.0, 598.0, 29.0 ],
-									"text" : "http://www.audibledata.com/Music/Entries/2010/11/13_Unitas_Multiplex_for_electronic_drum-kit\\,_Max_Msp_and_a_multichannel_diffusion_system_(5)_files/unitas_multiplex_mater_stereo.mp3"
+									"patching_rect" : [ 52.0, 393.0, 160.0, 17.0 ],
+									"text" : "https://vimeo.com/27190010"
 								}
 
 							}
@@ -528,13 +573,12 @@
 									"fontname" : "Verdana",
 									"fontsize" : 10.0,
 									"id" : "obj-42",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 39.0, 361.0, 602.0, 29.0 ],
-									"text" : "http://www.audibledata.com/Music/Entries/2010/11/13_Unitas_Multiplex_for_electronic_drum-kit%2C_Max_Msp_and_a_multichannel_diffusion_system_%285%29.html"
+									"patching_rect" : [ 39.0, 361.0, 160.0, 17.0 ],
+									"text" : "https://vimeo.com/19323406"
 								}
 
 							}
@@ -543,13 +587,12 @@
 									"fontname" : "Verdana",
 									"fontsize" : 10.0,
 									"id" : "obj-40",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 25.0, 329.0, 602.0, 29.0 ],
-									"text" : "http://www.audibledata.com/Music/Entries/2011/1/13_Surr...realism_%28for_octophonic_sound_diffusion_system%29_%2810%29_files/Surr...realism_5%3A34_7%3A34_STEREO_downmix.mp3"
+									"patching_rect" : [ 25.0, 329.0, 329.0, 17.0 ],
+									"text" : "https://soundcloud.com/adrian-g/surr-realism-stereo-downmix"
 								}
 
 							}
@@ -562,8 +605,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 12.0, 297.0, 516.0, 17.0 ],
-									"text" : "http://www.audibledata.com/Podcast/Entries/2011/1/19_Improvisation_with_ag.presetmixpad.html"
+									"patching_rect" : [ 12.0, 297.0, 160.0, 17.0 ],
+									"text" : "https://vimeo.com/19108649"
 								}
 
 							}
@@ -660,7 +703,7 @@
 									"numinlets" : 7,
 									"numoutlets" : 7,
 									"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "bang", "" ],
-									"patching_rect" : [ 4.5, 47.0, 217.0, 19.0 ],
+									"patching_rect" : [ 65.5, 79.0, 217.0, 19.0 ],
 									"text" : "sel 0 1 2 3 4 5"
 								}
 
@@ -688,7 +731,7 @@
 									"numinlets" : 8,
 									"numoutlets" : 8,
 									"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "bang", "bang", "" ],
-									"patching_rect" : [ 650.0, 59.0, 208.5, 19.0 ],
+									"patching_rect" : [ 650.0, 42.0, 208.5, 19.0 ],
 									"text" : "sel 0 1 2 3 4 5 6"
 								}
 
@@ -702,7 +745,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 710.0, 442.0, 85.0, 17.0 ],
+									"patching_rect" : [ 721.0, 415.0, 85.0, 17.0 ],
 									"text" : "documentation"
 								}
 
@@ -715,7 +758,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 650.0, 30.0, 25.0, 25.0 ]
+									"patching_rect" : [ 650.0, 12.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -727,22 +770,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 5.0, 10.0, 25.0, 25.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Verdana",
-									"fontsize" : 10.0,
-									"id" : "obj-17",
-									"linecount" : 2,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 66.0, 425.0, 598.0, 29.0 ],
-									"text" : "http://www.audibledata.com/Podcast/Entries/2011/1/29_Electronic_drumkit_and_ag.granular.suite_live_in_London.html"
+									"patching_rect" : [ 66.0, 42.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -755,7 +783,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 579.0, 511.0, 156.0, 19.0 ],
+									"patching_rect" : [ 584.5, 521.0, 156.0, 19.0 ],
 									"text" : "combine file:// s @triggers 1"
 								}
 
@@ -783,7 +811,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 716.0, 483.0, 78.0, 20.0 ],
+									"patching_rect" : [ 685.0, 452.0, 78.0, 19.0 ],
 									"text" : "absolutepath"
 								}
 
@@ -872,34 +900,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-39", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-17", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-22", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-18", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-23", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-18", 2 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-25", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-18", 1 ]
@@ -908,16 +909,16 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-27", 0 ],
+									"destination" : [ "obj-25", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-18", 5 ]
+									"source" : [ "obj-18", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-29", 0 ],
+									"destination" : [ "obj-27", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-18", 4 ]
@@ -926,7 +927,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-31", 0 ],
+									"destination" : [ "obj-29", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-18", 3 ]
@@ -935,19 +936,19 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-33", 0 ],
+									"destination" : [ "obj-31", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-18", 6 ]
+									"source" : [ "obj-18", 2 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-17", 0 ],
+									"destination" : [ "obj-33", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-19", 4 ]
+									"source" : [ "obj-18", 5 ]
 								}
 
 							}
@@ -989,7 +990,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-4", 1 ],
+									"destination" : [ "obj-43", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-2", 0 ]
@@ -1160,6 +1161,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-34", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-39", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -1182,6 +1192,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-42", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-43", 0 ]
 								}
 
 							}
@@ -2466,7 +2485,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
+					"destination" : [ "obj-27", 1 ],
 					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-24", 0 ]
@@ -2524,7 +2543,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 1 ],
+					"destination" : [ "obj-27", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-37", 0 ]
@@ -2649,274 +2668,281 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "jmod.ag.granular.control.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control",
 				"patcherrelativepath" : "./jmod.ag.granular.control",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "list_gen.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
 				"patcherrelativepath" : "./jmod.ag.granular.control/control.abstractions/embedded",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "listgen_random.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
 				"patcherrelativepath" : "./jmod.ag.granular.control/control.abstractions/embedded",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "randist_params+type.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions",
 				"patcherrelativepath" : "./jmod.ag.granular.control/control.abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "listgen_ramp_step.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
 				"patcherrelativepath" : "./jmod.ag.granular.control/control.abstractions/embedded",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "listgen_ramp_min_max.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
 				"patcherrelativepath" : "./jmod.ag.granular.control/control.abstractions/embedded",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "listgen_curve_power.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
 				"patcherrelativepath" : "./jmod.ag.granular.control/control.abstractions/embedded",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "listgen_curve_exp_log.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"patcherrelativepath" : "./jmod.ag.granular.control/control.abstractions/embedded",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "listgen_ramp_geometric_progression.maxpat",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
 				"patcherrelativepath" : "./jmod.ag.granular.control/control.abstractions/embedded",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "control.unit.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
 				"patcherrelativepath" : "./jmod.ag.granular.control/control.abstractions/embedded",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "multislider_bpatcher_float.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions",
 				"patcherrelativepath" : "./jmod.ag.granular.control/control.abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "randist_params.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions",
 				"patcherrelativepath" : "./jmod.ag.granular.control/control.abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "multislider_range.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
 				"patcherrelativepath" : "./jmod.ag.granular.control/control.abstractions/embedded",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "position_traverse_clip_wrap.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
 				"patcherrelativepath" : "./jmod.ag.granular.control/control.abstractions/embedded",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.ag.granular.engine~.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.engine~",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.engine~",
 				"patcherrelativepath" : "./jmod.ag.granular.engine~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "samplebrowser.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.engine~/engine.abstractions",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.engine~/engine.abstractions",
 				"patcherrelativepath" : "./jmod.ag.granular.engine~/engine.abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.sur.multi.in~.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.in~",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.in~",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.in~",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.in~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.sur.output~.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.output~",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.output~",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.output~",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.output~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.sur.output~.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.output~",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.output~",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.output~",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.output~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.thru.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/library/components/thru",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/library/components/thru",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/library/components/thru",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/library/components/thru",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.audioOnOff.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/library/components/audioOnOff",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/library/components/audioOnOff",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/library/components/audioOnOff",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/library/components/audioOnOff",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.js_systeminfo.js",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/javascript",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/javascript",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/javascript",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.ag.presetmixpad.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.presetmixpad",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.presetmixpad",
 				"patcherrelativepath" : "./jmod.ag.presetmixpad",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.ag.granular.record.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.record",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.record",
 				"patcherrelativepath" : "./jmod.ag.granular.record",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.ag.granular.play.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.play",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.play",
 				"patcherrelativepath" : "./jmod.ag.granular.play",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.ag.granular.modulate.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/jmod.ag.granular.modulate",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.modulate",
 				"patcherrelativepath" : "./jmod.ag.granular.modulate",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.Zfreeverb~.maxpat",
-				"bootpath" : "/Users/Adrian/MaxMSP/__Externals/ag.granular.suite/misc/jmod.Zfreeverb~_from_Jamoma_UserLib_Z",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/misc/jmod.Zfreeverb~_from_Jamoma_UserLib_Z",
 				"patcherrelativepath" : "./misc/jmod.Zfreeverb~_from_Jamoma_UserLib_Z",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.sur.multi.out~.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.out~",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.out~",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.out~",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.out~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.sur.multi.out~.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.out~",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.out~",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.out~",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.out~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.degrade~.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/degrade~",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/degrade~",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/degrade~",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/modules/audio/degrade~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.degrade~.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/degrade~",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/degrade~",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/degrade~",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/modules/audio/degrade~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.meter_receive.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/library/components/meter_receive",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/library/components/meter_receive",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/library/components/meter_receive",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/library/components/meter_receive",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.multidelay~.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/multidelay~",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/multidelay~",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/multidelay~",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/modules/audio/multidelay~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.multidelay~.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/multidelay~",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/multidelay~",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/multidelay~",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/modules/audio/multidelay~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.sur.multi.in~.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.in~",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.in~",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.in~",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.multi.in~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.sur.meters~.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.meters~",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.meters~",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.meters~",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/modules/spatialization/sur.meters~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.filter~.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/filter~",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/filter~",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/filter~",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/modules/audio/filter~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.filter~.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/filter~",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/filter~",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/audio/filter~",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/modules/audio/filter~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.cueManager.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/control/cueManager",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/control/cueManager",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/modules/control/cueManager",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/modules/control/cueManager",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.initialized.maxpat",
-				"bootpath" : "/Users/Adrian/Documents/Max/Packages/Jamoma-0.5.7/patchers/library/components/initialized",
-				"patcherrelativepath" : "../../../Documents/Max/Packages/Jamoma-0.5.7/patchers/library/components/initialized",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Packages/Jamoma-0.5.7/patchers/library/components/initialized",
+				"patcherrelativepath" : "../../Packages/Jamoma-0.5.7/patchers/library/components/initialized",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2933,23 +2959,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "jcom.parameter.mxo",
+				"name" : "randdist.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "ftm.mess.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "jcom.message.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "jcom.init.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "randdist.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2958,6 +2972,14 @@
 			}
 , 			{
 				"name" : "jcom.oscroute.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jcom.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jcom.message.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2986,6 +3008,10 @@
 			}
 , 			{
 				"name" : "jcom.hub.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jcom.init.mxo",
 				"type" : "iLaX"
 			}
 , 			{
