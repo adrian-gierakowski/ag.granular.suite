@@ -21,8 +21,8 @@ To use this patches you will need to install:
 
 Max/MSP 6 or 6.1 from: http://cycling74.com/downloads/ 
 
-as well as a couple of add-ons:
-FTM 2.6.0 beta from: http://ftm.ircam.fr/index.php/Download
+as well as a couple of add-ons: 
+FTM 2.6.0 beta from: http://ftm.ircam.fr/index.php/Download 
 Jamoma 0.5.7 from:  http://jamoma.org/download/http://jamoma.org/download/
 
 Please note the due dependency on randdist external the ag.granular.suite currently works only on OSX.
