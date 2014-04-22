@@ -30,6 +30,203 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"embed" : 1,
+					"hidden" : 1,
+					"id" : "obj-10",
+					"maxclass" : "bpatcher",
+					"name" : "listgen_ramp_geometric_progression.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 6,
+							"minor" : 1,
+							"revision" : 6,
+							"architecture" : "x86"
+						}
+,
+						"rect" : [ 144.0, 110.0, 165.0, 19.0 ],
+						"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 1,
+						"default_fontsize" : 10.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"gridonopen" : 0,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 0,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"boxanimatetime" : 200,
+						"imprint" : 0,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-14",
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 35.0, 135.0, 25.0, 25.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bordercolor" : [ 0.388235, 0.388235, 0.388235, 1.0 ],
+									"fontname" : "Verdana",
+									"fontsize" : 10.0,
+									"hint" : "initial value",
+									"id" : "obj-10",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 131.5, 42.666687, 50.0, 19.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 38.0, 0.0, 62.0, 19.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bordercolor" : [ 0.388235, 0.388235, 0.388235, 1.0 ],
+									"fontname" : "Verdana",
+									"fontsize" : 10.0,
+									"hint" : "common ratio",
+									"id" : "obj-11",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 280.0, 42.666687, 50.0, 19.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 101.0, 0.0, 62.0, 19.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bordercolor" : [ 0.388235, 0.388235, 0.388235, 1.0 ],
+									"fontname" : "Verdana",
+									"fontsize" : 10.0,
+									"hint" : "list length",
+									"id" : "obj-12",
+									"maxclass" : "number",
+									"maximum" : 512,
+									"minimum" : 2,
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 35.0, 42.666687, 50.0, 19.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 0.0, -0.333328, 36.0, 19.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"#init" : "2 0 1",
+									"#loadbang" : 0,
+									"#triggerall" : 1,
+									"#untuple" : 0,
+									"fontname" : "Verdana",
+									"fontsize" : 10.0,
+									"ftm_objref_conv" : 0,
+									"ftm_scope" : 1,
+									"id" : "obj-13",
+									"maxclass" : "ftm.mess",
+									"numinlets" : 3,
+									"numins" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 35.0, 102.0, 280.761719, 17.0 ],
+									"presentation_rect" : [ 35.0, 102.0, 280.761719, 17.0 ],
+									"text" : [ "_(list (((new fmat 1 1) rows $1) fill $geometric $2 $3))" ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"description" : "expr '($1 * (pow $2 $row))'",
+									"editor_interface" : "",
+									"fontname" : "Verdana",
+									"fontsize" : 10.0,
+									"ftm_objref_conv" : 0,
+									"ftm_scope" : 0,
+									"id" : "obj-4",
+									"maxclass" : "ftm.object",
+									"name" : "geometric",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 485.0, 42.666672, 217.183594, 18.0 ],
+									"persistence" : 0,
+									"presentation_rect" : [ 485.0, 42.666672, 217.183594, 18.0 ],
+									"scope" : 0,
+									"text" : "expr '($1 * (pow $2 $row))'"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 2 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-13", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 203.0, 79.0, 165.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 144.0, 66.0, 165.0, 19.0 ],
+					"varname" : "lg_ramp_geometric_progression"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 1,
 					"fontname" : "Verdana",
 					"fontsize" : 14.0,
@@ -67,7 +264,7 @@
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"ftm_objref_conv" : 0,
-					"ftm_scope" : 1,
+					"ftm_scope" : 0,
 					"hint" : "sort (max to min)",
 					"id" : "obj-26",
 					"maxclass" : "ftm.mess",
@@ -211,7 +408,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"outlinecolor" : [ 0.388235, 0.388235, 0.388235, 1.0 ],
-					"patching_rect" : [ 664.5, 418.5, 20.0, 20.0 ],
+					"patching_rect" : [ 661.5, 393.5, 20.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 154.0, 18.0, 20.0, 20.0 ]
 				}
@@ -256,7 +453,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 778.0, 420.0, 60.0, 19.0 ],
+					"patching_rect" : [ 775.0, 395.0, 60.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 19.0, 75.0, 19.0 ],
 					"rounded" : 4
@@ -715,7 +912,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1004.0, 420.0, 50.0, 19.0 ],
+					"patching_rect" : [ 1001.0, 395.0, 50.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 119.0, 19.0, 35.0, 19.0 ]
 				}
@@ -735,7 +932,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 891.0, 420.0, 50.0, 19.0 ],
+					"patching_rect" : [ 888.0, 395.0, 50.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 83.0, 19.0, 35.0, 19.0 ]
 				}
@@ -757,8 +954,8 @@
 					"numins" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 665.0, 446.0, 357.495056, 17.0 ],
-					"presentation_rect" : [ 665.0, 446.0, 357.495056, 17.0 ],
+					"patching_rect" : [ 662.0, 421.0, 357.495056, 17.0 ],
+					"presentation_rect" : [ 662.0, 421.0, 357.495056, 17.0 ],
 					"text" : [ "_($listgen set (($list.values.fvecs.mat[$2 1] onset $3) size ($4 - $3)))" ]
 				}
 
@@ -918,7 +1115,7 @@
 					"framecolor" : [ 0.388235, 0.388235, 0.388235, 1.0 ],
 					"hint" : "list generator algorythm",
 					"id" : "obj-76",
-					"items" : [ "ramp", ",", "curve", ",", "random" ],
+					"items" : [ "ramp", ",", "geometric", ",", "curve", ",", "random" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -949,7 +1146,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 791.0, 495.0, 640.0, 480.0 ],
+						"rect" : [ 792.0, 495.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 10.0,
@@ -972,14 +1169,29 @@
 								"box" : 								{
 									"fontname" : "Verdana",
 									"fontsize" : 10.0,
+									"id" : "obj-4",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 34.0, 121.0, 607.0, 29.0 ],
+									"text" : "script show lg_ramp_minmax, script hide lg_ramp_step, script hide lg_curve_explog, script hide lg_curve_pow, script hide lg_randist, script show lg_ramp_geometric_progression"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Verdana",
+									"fontsize" : 10.0,
 									"id" : "obj-3",
 									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 48.0, 165.0, 572.0, 29.0 ],
-									"text" : "script hide lg_ramp_minmax, script hide lg_ramp_step, script hide lg_curve_explog, script hide lg_curve_pow, script show lg_randist"
+									"patching_rect" : [ 61.0, 207.0, 572.0, 29.0 ],
+									"text" : "script hide lg_ramp_minmax, script hide lg_ramp_step, script hide lg_curve_explog, script hide lg_curve_pow, script show lg_randist, script hide lg_ramp_geometric_progression"
 								}
 
 							}
@@ -993,8 +1205,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 35.0, 129.0, 581.0, 29.0 ],
-									"text" : "script hide lg_ramp_minmax, script hide lg_ramp_step, script show lg_curve_explog, script show lg_curve_pow, script hide lg_randist"
+									"patching_rect" : [ 48.0, 164.0, 581.0, 29.0 ],
+									"text" : "script hide lg_ramp_minmax, script hide lg_ramp_step, script show lg_curve_explog, script show lg_curve_pow, script hide lg_randist, script hide lg_ramp_geometric_progression"
 								}
 
 							}
@@ -1008,8 +1220,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 21.0, 78.0, 581.0, 29.0 ],
-									"text" : "script show lg_ramp_minmax, script show lg_ramp_step, script hide lg_curve_explog, script hide lg_curve_pow, script hide lg_randist"
+									"patching_rect" : [ 21.0, 78.0, 612.0, 29.0 ],
+									"text" : "script show lg_ramp_minmax, script show lg_ramp_step, script hide lg_curve_explog, script hide lg_curve_pow, script hide lg_randist, script hide lg_ramp_geometric_progression"
 								}
 
 							}
@@ -1019,11 +1231,11 @@
 									"fontsize" : 10.0,
 									"id" : "obj-31",
 									"maxclass" : "newobj",
-									"numinlets" : 4,
-									"numoutlets" : 4,
-									"outlettype" : [ "bang", "bang", "bang", "" ],
-									"patching_rect" : [ 21.0, 48.0, 59.5, 19.0 ],
-									"text" : "sel 0 1 2"
+									"numinlets" : 5,
+									"numoutlets" : 5,
+									"outlettype" : [ "bang", "bang", "bang", "bang", "" ],
+									"patching_rect" : [ 21.0, 48.0, 73.0, 19.0 ],
+									"text" : "sel 0 1 2 3"
 								}
 
 							}
@@ -1034,7 +1246,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 21.0, 213.0, 25.0, 25.0 ]
+									"patching_rect" : [ 21.0, 331.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -1074,7 +1286,7 @@
 									"destination" : [ "obj-3", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-31", 2 ]
+									"source" : [ "obj-31", 3 ]
 								}
 
 							}
@@ -1090,6 +1302,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-35", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-31", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-31", 1 ]
@@ -1111,6 +1332,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-35", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -2090,7 +2320,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 33.0, 108.0, 25.0, 25.0 ]
+									"patching_rect" : [ 26.0, 105.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -2103,7 +2333,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 337.0, 49.0, 86.0, 19.0 ],
+									"patching_rect" : [ 271.0, 4.0, 86.0, 19.0 ],
 									"text" : "loadmess set 1"
 								}
 
@@ -2120,7 +2350,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 120.0, 34.666672, 50.0, 19.0 ],
+									"patching_rect" : [ 148.5, 42.666672, 50.0, 19.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 38.0, 0.0, 62.0, 19.0 ]
 								}
@@ -2138,7 +2368,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 222.0, 34.666672, 50.0, 19.0 ],
+									"patching_rect" : [ 271.0, 42.666672, 50.0, 19.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 101.0, 0.0, 62.0, 19.0 ]
 								}
@@ -2158,7 +2388,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 35.0, 34.666672, 50.0, 19.0 ],
+									"patching_rect" : [ 26.0, 42.666672, 50.0, 19.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, -0.333328, 36.0, 19.0 ]
 								}
@@ -2180,9 +2410,9 @@
 									"numins" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 26.0, 72.0, 264.0, 17.0 ],
-									"presentation_rect" : [ 26.0, 72.0, 264.0, 17.0 ],
-									"text" : [ "_(list ((($listgen rows $1) rampinc $2 ($2 + $3))))" ]
+									"patching_rect" : [ 26.0, 72.0, 212.885742, 17.0 ],
+									"presentation_rect" : [ 26.0, 72.0, 212.885742, 17.0 ],
+									"text" : [ "_(list (($listgen rows $1) rampinc $2 $3))" ]
 								}
 
 							}
@@ -2235,7 +2465,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 203.0, 77.0, 165.0, 19.0 ],
+					"patching_rect" : [ 203.0, 23.0, 165.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 144.0, 66.0, 165.0, 19.0 ],
 					"varname" : "lg_ramp_minmax"
@@ -2432,7 +2662,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 203.0, 97.0, 165.0, 19.0 ],
+					"patching_rect" : [ 203.0, 42.0, 165.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 144.0, 86.0, 165.0, 19.0 ],
 					"varname" : "lg_ramp_step"
@@ -2525,8 +2755,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 175.0, 288.0, 282.255859, 17.0 ],
-					"presentation_rect" : [ 175.0, 288.0, 282.255859, 17.0 ],
+					"patching_rect" : [ 199.0, 291.0, 282.255859, 17.0 ],
+					"presentation_rect" : [ 199.0, 291.0, 282.255859, 17.0 ],
 					"text" : [ "_replace $listgen wave, autoviewbounds 1, forceredraw" ]
 				}
 
@@ -2605,8 +2835,7 @@
 					"patching_rect" : [ 85.0, 358.0, 112.0, 126.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 108.0, 112.0, 70.0 ],
-					"rounded" : 1.0,
-					"text" : "0. 1."
+					"rounded" : 1.0
 				}
 
 			}
@@ -3246,6 +3475,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3715,6 +3953,13 @@
 			}
 , 			{
 				"name" : "listgen_curve_exp_log.maxpat",
+				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "listgen_ramp_geometric_progression.maxpat",
 				"bootpath" : "/Users/adriangierakowski/Documents/Max/Externals/ag.granular.suite/jmod.ag.granular.control/control.abstractions/embedded",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
